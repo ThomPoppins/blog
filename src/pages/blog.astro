@@ -1,0 +1,20 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/blog/BlogPost.astro";
+const allPosts = await Astro.glob("../pages/posts/*.mdx");
+const pageTitle = "Blog";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="purple-section">
+    <p>These are my current blog posts.</p>
+    <ul>
+      {
+        allPosts.map((post) => (
+          <BlogPost url={post.url} title={post.frontmatter.title} />
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

@@ -1,0 +1,36 @@
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Exclude pnpm lock file
+pnpm-lock.yaml
+
+# environment variables
+.env
+.env.production
+
+.history/
+
+# macOS-specific files
+.DS_Store
+
+public
+
+# Add fonts to git
+!public/fonts
+
+# Images not to be ignored
+!public/images/blog/layout/GIF/colorbar.gif
+!public/images/blog/layout/GIF/glasslike-visual.gif
+
+!public/images/blog/venetian-snares/

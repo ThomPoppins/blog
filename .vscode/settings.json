@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "breakcore",
+        "Hellraiser",
+        "oldschool"
+    ],
+    "editor.tabSize": 2,
+    "workbench.editor.dragToOpenWindow": false
+}

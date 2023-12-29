@@ -1,0 +1,56 @@
+---
+const { releaseDate, catalogNumber, label, country, genre, imgUrl, imgAlt } =
+  Astro.props;
+---
+
+{
+  /*  
+  Example Usage:
+  <ReleaseInformation
+    releaseDate="YYYY-MM-DD"
+    catalogNumber="60016"
+    label="Cenobite Records"
+    country="Netherlands"
+    genre="Psycore, Early Hardcore, Hardcore Techno, Early Terror, Early Rave, Gabber"
+    imgUrl="https://i.discogs.com/gaOt7-BCmamHHkiY9S4AIHN9t_Txw1gQO3hLyLFjxPo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODE0/LTE0ODkyMjM3MjAt/Mzk0Mi5qcGVn.jpeg"
+    imgAlt="First Cenobite Release Album Cover"
+  />
+
+  <ReleaseInformation
+    releaseDate="YYYY-MM-DD"
+    label=""
+    catalogNumber=""
+    country=""
+    genre="
+    imgUrl=""
+    imgAlt=""
+  />
+*/
+}
+
+<div
+  class="release-information"
+  style={{ display: "flex", alignItems: "center" }}
+>
+  {
+    imgUrl && (
+      <img
+        src={imgUrl}
+        alt={imgAlt}
+        style={{
+          marginRight: "20px",
+          maxWidth: "200px",
+          maxHeight: "200px",
+        }}
+      />
+    )
+  }
+
+  <div>
+    <p>Date: {releaseDate}</p>
+    <p>Label: {label}</p>
+    <p>Catalog Number:</p>
+    <p>Country: {country}</p>
+    <p>Genre: {genre}</p>
+  </div>
+</div>
