@@ -1,1209 +1,270 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import ReleaseInformation from "../components/release/ReleaseInformation.astro";
-
 const pageTitle = "About";
-
-const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-    <style define:vars={{ skillColor, fontWeight, textCase }}>
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
+<BaseLayout>
+  <div class="section-island">
     <h1>{pageTitle}</h1>
 
-    <div class="purple-section">
-      <h3>🎵 Unlocking Musical Freedom</h3>
-      <p>
-        If most of the music you know has been from mainstream radio or
-        suggested by commercial services/apps, you might not have realized that
-        your freedom of choice and which things to love may not be truly your
-        own. Perhaps discovering new music by making some time in your schedule
-        and going on a journey of exploration could lead you to something you'd
-        love even more than you ever thought possible. If you have never tried
-        this... Doesn't it make sense to start doing that? 🌍 Way much more than
-        half of the people on earth find music important in their lives, so I
-        hope this idea could inspire someone to get started with the same thing
-        I have done from a very young age. It comes natural to me, mostly
-        because the music on the radio always annoyed me because the much bigger
-        bunch of it was boring to me.
-      </p>
-
-      <h3>My Origins</h3>
+    <div>
+      <h2>UN-RADIO</h2>
 
       <p>
-        Toen ik nog op de basisschool zat (van groep 1 tot ongeveer groep 7)
-        kreeg ik niets mee van de gabber cultuur. De hardste muziek die ik tot
-        mijn beschikking had was een trance compilatie gemixed door Tiesto. Dit
-        album kwam vlak voor mijn 12e verjaardag uit en ik kreeg het voor mijn
-        verjaardag van mijn ouders. Ik heb het album helemaal grijs gedraaid en
-        ook al heb ik geen interesse de artiesten op deze albums een spotlight
-        te geven op Un-Radio, het was wel leuk om ze nog eens te luisteren en
-        het heeft enige nostalgische waarde voor mij.
+        Who can still imagine that time when there was no UN-RADIO? Here's a
+        summary of how such a masterpiece comes to life. Get ready for a
+        delicious dose of inspiration that awaits you—I'm already getting warm
+        just thinking about it.
       </p>
 
-      <h4>Tiesto - Nyana</h4>
+      <h3>Prerequisite</h3>
 
-      <!-- <ReleaseInformation
-      releaseDate="YYYY-MM-DD"
-      CatalogNumber=""
-      label=""
-      country=""
-      genre=""
-      imgUrl=""
-      imgAlt=""
-    /> -->
-
-      <div class="release-info">
-        <ReleaseInformation
-          releaseDate="May 5, 2003"
-          label="Black Hole Recordings"
-          CatalogNumber="BLACK HOLE CD 30"
-          genre="Trance, Techno, Progressive Trance"
-          country="Netherlands"
-          imgUrl="https://i.discogs.com/DPdohUYnIN5Pw43KIgwVXHNg09aYryjzru6Ry0eVLpI/rs:fit/g:sm/q:90/h:530/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDgx/NC0xMjM5ODk3NTY0/LmpwZWc.jpeg"
-          imgAlt="Nyana by Tiesto Album Cover"
-        />
-      </div>
-
-      <h5>DISC 1. OUTDOOR</h5>
-
-      <div class="youtube-embed-container">
+      <div class="youtube-player-container">
         <iframe
           class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/L3n0W9FvNhs?si=sZTz5ex2ChQaNQG7"
+          src="https://www.youtube.com/embed/JK1NEy1ZilE?si=Gagzzrxqfn6OEFmA"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div>
-        <table style={{ width: "100%" }}>
-          <thead>
-            <tr>
-              <th>Start at</th>
-              <th>Track No.</th>
-              <th>Artist</th>
-              <th>Title</th>
-              <th>Duration</th>
-            </tr>
-          </thead>
-          <h6>1. Reinhard Voigt - Supertiel</h6>
-          <tbody>
-            <tr>
-              <td>(0:00:00)</td>
-              <td>1-01</td>
-              <td>Reinhard Voigt</td>
-              <td>Supertiel</td>
-              <td>7:05</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="flashback-review">
-          <p>
-            <i>
-              <p><strong>Flashback review:</strong></p>
-
-              <p>
-                Als kind vond ik de eerste track ook behoorlijk eentonig en lang
-                duren. Waarom 7 minuten zonder dat het ergens naar toe gaat. Er
-                zit weinig bass in de muziek en ik voel me nu nog steeds net zo
-                verveeld als vroeger 7 heel langdurige minuten.
-              </p>
-            </i>
-          </p>
-        </div>
-
-        <div>
-          <h6>2. Tom Mangan - Chutney (Size 9 Reinterpretation)</h6>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:07:05)</td>
-                <td>1-02</td>
-                <td>Tom Mangan</td>
-                <td>Chutney (Size 9 Reinterpretation)</td>
-                <td>4:48</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <i>
-              <p>
-                <strong>Flashback review:</strong>
-              </p>
-
-              <p>
-                Track 2 was een klein beetje dragelijker dan de eerste track,
-                maar nog steeds behoorlijk eentonig. Gelukkig duurde het nu wel
-                een ruime 2 minuten korter, wat echt een wereld van verschil
-                was. Ik vond de CD tot dit punt behoorlijk saai, maar ik
-                luisterde er wel vaak naar en liet ook verder aan niemand weten
-                wat ik ervan vond. Ik denk dat mijn ouders gewoon dachten dat ik
-                hiervan zat te genieten, maar het gebrek aan muziek was het
-                probleem. Ik besefte niet dat er kosmische hoeveelheden rave
-                muziek werden geproduceerd, en dat al vanaf voor dat ik
-                überhaupt op aarde was.
-              </p>
-
-              <p>
-                Wat ik me als 12-jarige in 2003 totaal niet realiseerde, is dat
-                er sinds de vroege jaren '90 echt veel interessantere muziek
-                werd geproduceerd met krachtige beats en raves van laat in de
-                avond tot vroeg in de ochtend.
-              </p>
-
-              <p>
-                Ik wilde gewoon de beste elektronische muziek horen, en mijn
-                ouders verrasten me met muziek van de DJ die destijds als
-                "nummer 1 van de wereld" werd beschouwd. Op dat moment kon je
-                als ouder niet beter kiezen. Maar het blijft een vreemd principe
-                dat een DJ/Producer als "nummer 1" wordt beschouwd, terwijl er
-                zoveel verschillende smaken en doelgroepen zijn. Vaak lijkt het
-                alsof de DJ met muziek die "massaal hoorbaar" is of "primair
-                inkomstengedreven" op nummer 1 staat. Radiozenders draaien dan
-                die kleine selectie van "top DJ's", en luisteraars worden
-                behandeld als mensen die alles zomaar accepteren (zelfs als je
-                maandenlang elk uur naar hetzelfde nummer luistert zonder er
-                genoeg van te krijgen, dan heb je ze wel echt in je zak,
-                nietwaar?).
-              </p>
-
-              <p>
-                Maar ja, Tiesto was in 2003 "De beste DJ ter wereld" volgens DJ
-                Magazine's Top 100 DJ Poll, gekozen door lezers/publiek/leden
-                van het magazine. Toch weten de meeste mensen niet hoe oneindig
-                veel keuze en variatie er is, en muziek is bovendien moeilijk
-                objectief te beoordelen. Daarom voel ik me vrij om mijn mening
-                te uiten, omdat er geen objectieve waarheid bestaat; niemand kan
-                mijn tegendeel bewijzen, hoezeer ze het ook proberen.
-              </p>
-
-              <p>
-                Toen ik 12 was, groeide er een florerende "early hardcore/terror
-                gabber scene", waarvan ik als kind had kunnen genieten. Maar ik
-                zat opgescheept met die eentonige Tiesto-muziek, denkend dat dit
-                het beste was. Als 12-jarige wist ik nog niet dat alles wat
-                mensen met financiële belangen zeggen, dikke onzin is.
-                Schijnbaar hebben veel volwassenen daar ook last van als ze
-                serieus denken dat Tiesto de beste DJ ter wereld is. Ik zat in
-                een bubbel, maar ja, ik kon toch nog niet naar feestjes gaan. Ik
-                weet dus hoe het is om blind gemaakt te worden en dom gehouden
-                te worden door mensen die beweren "muziek kenners" te zijn,
-                zoals radio DJ's, en al dat tuig in de lagen boven hen, die
-                gewoon zakelijk zoveel mogelijk omzet proberen te draaien, en
-                dat is het!
-              </p>
-
-              <p>
-                Ik was een slachtoffer van hoe radio, muziek-tv en alle
-                mainstream media geen aandacht besteedden aan de gabber scene,
-                die behoorlijk populair was. Mensen namen afstand van die
-                "drugsgebruikers", terwijl ze zelf wellicht met een flinke slok
-                op van de kroeg naar huis fietsten of met een kwade dronk een
-                knokpartij uitlokten.
-              </p>
-
-              <p>
-                Maar niemand neemt openlijk afstand van "dronken mensen die naar
-                de kroeg gaan als ze stappen". Terwijl dat regelmatig verkeerd
-                afloopt, wordt de politie behoorlijk belast bij uitgaansgebieden
-                met straten vol kroegen waar mensen komen om te drinken.
-              </p>
-
-              <p>
-                Ik heb nog nooit meegemaakt dat ik naar een rave (of
-                hardcore/techno) feestje ben geweest waar de politie moest
-                ingrijpen. Het is onvoorstelbaar vredig en positief, met meer
-                dan genoeg beveiliging. Ook hebben we nooit problemen gehad met
-                overdoses of ruzies, zoals je vaak ziet bij dronken mensen,
-                vooral in groepen. Dat moet iedereen zelf weten, maar als je ons
-                aankeek alsof we tuig waren, dan was je behoorlijk bekrompen. Zo
-                denk ik nog steeds over mensen die oordelen over liefde voor
-                bepaalde muziekgenres of voorkeuren voor feestjes.
-              </p>
-
-              <p>
-                Ik heb nog nooit meegemaakt dat ik naar een rave (of
-                hardcore/techno) feestje ben geweest waar de politie moest
-                ingrijpen. Het is onvoorstelbaar vredig en positief, met meer
-                dan genoeg beveiliging. Ook hebben we nooit problemen gehad met
-                overdoses of ruzies, zoals je vaak ziet bij dronken mensen,
-                vooral in groepen. Dat moet iedereen zelf weten, maar als je ons
-                aankeek alsof we tuig waren, dan was je behoorlijk bekrompen. Zo
-                denk ik nog steeds over mensen die oordelen over liefde voor
-                bepaalde muziekgenres of voorkeuren voor feestjes.
-              </p>
-
-              <p>
-                Momenteel ben ik volle bak aan het programmeren op die
-                "rave"-muziek, en beginnen de eurotekens in mijn ogen te
-                glinsteren. Mentale energie en "state of mind" motiveren me door
-                het horen van deze heerlijke bak herrie.
-              </p>
-
-              <p>
-                Van alle DJ's die werden overwogen om gedraaid te worden door de
-                media (radio, muziek-tv, enz.), was Tiesto de beste. Na de
-                eerste twee tracks, geselecteerd door de beste DJ ter wereld,
-                zit ik nu op ongeveer 12 minuten en is het album nog steeds
-                saai. Een beetje saaie beat zonder dikke bass, meer een soort
-                eentonige drum zonder enkele uitdaging om gefocust naar te
-                luisteren. Het is gewoon saai, en dat vond ik als kind al tot
-                dit punt in het album. Maar ik kon deze muziek op geen enkele
-                manier vergelijken met die geweldige early gabber stijlen die
-                gewoon geweldig zijn om te horen.
-              </p>
-
-              <p>
-                Het is voor mij onvoorstelbaar dat Tiesto geen enkele
-                concurrentie ervaart van een album als <strong
-                  >The Revelation</strong
-                > van <strong>Cenobite Records</strong> uit 1999, dat nooit op
-                een publieke radiozender wordt gespeeld.
-              </p>
-
-              <h5>Luister zelf:</h5>
-
-              <div class="release">
-                <h5>
-                  First 12 minutes of <strong>The Revelation</strong> by <strong
-                    >Cenobyte Records</strong
-                  >
-                </h5>
-                <div class="release">
-                  <ol>
-                    <li><h6>Leviathan - Drug Invasion (1997)</h6></li>
-                    <div class="youtube-embed-container">
-                      <iframe
-                        class="youtube-video"
-                        src="https://www.youtube.com/embed/-Ph39JG5ZAA?si=lHJzkXUzKIr8LcS1"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
-
-                    <li>
-                      <h6>MISSING (WILL BE REPLACED): Ancient Heroes– Life</h6>
-                    </li>
-
-                    <li><h6>Ancient Heroes - The Waltz (1999)</h6></li>
-                    <div class="youtube-embed-container">
-                      <iframe
-                        class="youtube-video"
-                        src="https://www.youtube.com/embed/a1qzCYN-gXY?si=HcV5sE-9YKU945Hl"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
-
-                    <li></li>
-                    <li></li>
-                  </ol>
-                </div>
-              </div>
-
-              <hr />
-
-              <div class="release">
-                <h5>1989 &gt; 2003?</h5>
-                <p>
-                  <strong>1989 "Early Early"</strong> &gt;
-                  <strong>2003 Trance/Techno/Electronic</strong> by <strong
-                    >"The best DJ in the world"</strong
-                  >
-                </p>
-              </div>
-
-              <p>
-                In 1989 was er al interessantere muziek dan de selectie van "De
-                beste DJ ter wereld":
-              </p>
-
-              <h6>Rhythm Device – Acid Rock (1989)</h6>
-
-              <div class="youtube-embed-container">
-                <iframe
-                  class="youtube-video"
-                  src="https://www.youtube.com/embed/z5Z9U3F6vPA?si=6bDFLkN7WzCez20f"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-
-              <!-- <h6>Human Resource – Dominator (1989)</h6>
-
-              <div class="youtube-embed-container">
-              <iframe
-              class="youtube-video"
-              src="https://www.youtube.com/embed/2Pw5Zk9Qb4I?si=6bDFLkN7WzCez20f"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe> -->
-
-              <h6>The Mackenzie – Party People (1989)</h6>
-
-              <div class="youtube-embed-container">
-                <iframe
-                  class="youtube-video"
-                  src="https://www.youtube.com/embed/xlh7jbKPYk0?si=swbfciPII1VxbpWG"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-
-              <h6>Reese & Santonio– Rock To The Beat (1989)</h6>
-
-              <div class="youtube-embed-container">
-                <iframe
-                  class="youtube-video"
-                  src="https://www.youtube.com/embed/ZLHxlEokD3A?si=aAcYGTCRNSEzfWdt"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-
-              <h6>Lil' Louis & The World – Blackout (1989)</h6>
-
-              <div class="youtube-embed-container">
-                <iframe
-                  class="youtube-video"
-                  src="https://www.youtube.com/embed/MB7fzidR4UQ?si=PNPPVhVClZEwwGVL"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-
-              <p>
-                Hoe kan dat nou dat in 1989 deze vette underground early rave
-                muziek al bestaat en dat godnondeju in 2023, <strong
-                  >34 JAAR LATER</strong
-                >
-                 de best gewaardeerde DJ ter wereld een album opent met de meest
-                droge percussie dat je gewoon verveeld raakt en zelfs lichte
-                irritatie te boven komt. Deze early rave sound is toch nu al (in
-                1989 al) veel vermakelijker om naar te luisteren, of licht dat
-                nou aan mij?
-              </p>
-            </i>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:11:54)</td>
-                <td>1-03</td>
-                <td>The Ambush</td>
-                <td>Acapulco</td>
-                <td>3:38</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> Hier begint de muziek pas een
-                aangename vorm te krijgen, niet heel bijzonder maar zeker niet
-                onprettig.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:15:32)</td>
-                <td>1-04</td>
-                <td>Tiësto* Vs. Junkie XL</td>
-                <td>Obsession (Frank Biazzi Remix)</td>
-                <td>3:52</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong>
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:19:24)</td>
-                <td>1-05</td>
-                <td>Planisphere</td>
-                <td>Totem</td>
-                <td>8:00</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:27:24)</td>
-                <td>1-06</td>
-                <td>Darren Tate Vs. Jono Grant</td>
-                <td>Let The Light Shine In</td>
-                <td>6:16</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:33:41)</td>
-                <td>1-07</td>
-                <td>Midway</td>
-                <td>Inca</td>
-                <td>3:55</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:37:36)</td>
-                <td>1-08</td>
-                <td>Tiësto*</td>
-                <td>Nyana</td>
-                <td>7:34</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:45:11)</td>
-                <td>1-09</td>
-                <td>DJ Cor Fijneman* Featuring Jan Johnston</td>
-                <td>Venus (Meant To Be Your Lover) (Tiësto Remix)</td>
-                <td>4:49</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:50:00)</td>
-                <td>1-10</td>
-                <td>Conjure One Feat. Sinéad O'Connor</td>
-                <td>Tears From The Moon (Tiësto In Search Of Sunrise Remix)</td>
-                <td>6:31</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:56:32)</td>
-                <td>1-11</td>
-                <td>DJ Ton T.B.</td>
-                <td>Electronic Malfunction</td>
-                <td>5:40</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:02:12)</td>
-                <td>1-12</td>
-                <td>The Gift (2)</td>
-                <td>Love Angel (M.I.K.E. Remix)</td>
-                <td>5:22</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:07:35)</td>
-                <td>1-13</td>
-                <td>Solar Factor</td>
-                <td>Urban Shakedown (Original Mix)</td>
-                <td>3:31</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:11:07)</td>
-                <td>1-14</td>
-                <td>GTR</td>
-                <td>Mistral</td>
-                <td>6:11</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <h5>DISC 2. INDOOR</h5>
-
-        <div class="youtube-embed-container">
-          <iframe
-            class="youtube-video"
-            src="https://www.youtube-nocookie.com/embed/L3n0W9FvNhs?si=lZUhxZvR-FH5LweD"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <thead>
-              <tr>
-                <th>Start at</th>
-                <th>Track No.</th>
-                <th>Artist</th>
-                <th>Title</th>
-                <th>Duration</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>(0:00:00)</td>
-                <td>2-01</td>
-                <td>Catcher</td>
-                <td>Destiny Sunrise</td>
-                <td>5:50</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:05:50)</td>
-                <td>2-02</td>
-                <td>Filterheadz Present Orange 3</td>
-                <td>In Your Eyes (Blue Mix)</td>
-                <td>3:56</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:09:46)</td>
-                <td>2-03</td>
-                <td>Andain</td>
-                <td>Beautiful Things (Gabriel & Dresden Remix)</td>
-                <td>7:15</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:17:01)</td>
-                <td>2-04</td>
-                <td>Solarstone Vs. Sirocco</td>
-                <td>Destination</td>
-                <td>5:13</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:22:14)</td>
-                <td>2-05</td>
-                <td>Young Parisians</td>
-                <td>U Write The Rules (Solarstone Remix)</td>
-                <td>5:13</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:28:27)</td>
-                <td>2-06</td>
-                <td>Holden* & Thompson*</td>
-                <td>Nothing (93 Returning Mix)</td>
-                <td>5:40</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:34:07)</td>
-                <td>2-07</td>
-                <td>Mr. Sam Vs. Fred Baker Present As One (2)</td>
-                <td>Forever Waiting</td>
-                <td>5:39</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:39:46)</td>
-                <td>2-08</td>
-                <td>Motorcycle</td>
-                <td>As The Rush Comes (Exclusive Demo Mix)</td>
-                <td>6:43</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:46:29)</td>
-                <td>2-09</td>
-                <td>The Roc Project Feat. Tina Arena</td>
-                <td>Never (DJ Tiësto Remix Vs. Filterheadz Remix)</td>
-                <td>9:29</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(0:56:58)</td>
-                <td>2-10</td>
-                <td>Smart System</td>
-                <td>Morgentau (Spring Mix)</td>
-                <td>4:42</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:01:40)</td>
-                <td>2-11</td>
-                <td>Leama</td>
-                <td>Requiem For A Dream (Leama's Dream Mix)</td>
-                <td>7:18</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:08:58)</td>
-                <td>2-12</td>
-                <td>P.O.S.</td>
-                <td>Remember (Summer Sun)</td>
-                <td>5:32</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-        <div>
-          <table style={{ width: "100%" }}>
-            <tbody>
-              <tr>
-                <td>(1:14:30)</td>
-                <td>2-13</td>
-                <td>Solid Globe</td>
-                <td>North Pole</td>
-                <td>6:24</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flashback-review">
-            <p>
-              <i>
-                <strong>Flashback review:</strong> [Your flashback review text
-                here.]
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <p>
-          Mijn zus die 2 jaar ouder is ging al naar de middelbare school en op
-          een dag draaide ze een paar hardcore plaatjes uit de speakers. Het zou
-          zomaar kunnen dat ze op dat moment onder andere Unleash the Beast
-          draaide van Outblast & Korsakoff, omdat dit plaatje het startschot is
-          geweest van mijn muziek obsessie, hier het eerste en laatste
-          mainstream hardcore plaatje op deze site:
-        </p>
-
-        <div class="youtube-embed-container">
-          <iframe
-            class="youtube-video"
-            src="https://www.youtube.com/embed/HyMzVW0Mh2U?si=OYZyliRmGa94WMKE"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-
-        <h3>🔄 Breaking the Repetition Cycle</h3>
-        <p>
-          The fact is that I hate hearing some songs being repeatedly played
-          like every hour, and hearing a song even 4 times a day is way too
-          often and way and way and way too often. I really don't get people
-          accepting this from happening to them—literally being shoved some
-          selected songs down their throats again and again and again without
-          stopping for months per track and always having certain tracks to
-          repeat endlessly. 🤔 I asked people lots of times if they find that
-          annoying, and if they still enjoy that certain song I heard over and
-          over, and most people say they are used to it but are not enjoying it
-          anymore after literally hearing it for 50+ times. 📻 I have to
-          conclude that these commercial radio stations behaving themselves this
-          way to their own listeners have lots of power because for many, there
-          is no alternative, and they are forced to listen to it in a certain
-          and common situation in their lives. Finding new music that is really
-          easy on the ears of many and even give people energy and party vibes,
-          if you think it is hard to find such...
-        </p>
-
-        <h4>Now it's party time damn it!</h4>
-
-        <p><strong>Go ahead and play this video damn it!</strong></p>
-
-        <div class="release">
-          <div class="youtube-embed-container">
-            <iframe
-              class="youtube-video"
-              src="https://www.youtube.com/embed/eXzImKAr4jA?si=4OM3Y40IjtC_iIry"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <p>You're welcome!</p>
-
-        <p>
-          This is how easy it is to find real good music that is not boring as
-          all like that mainsteam sheeple radio shit looping the same shit
-          endlessly over and over.
-        </p>
-
-        <p>
-          Who are you? What are we? Do we have to obey the music selection of
-          the mainstream media without even realizing it? Why do so few people
-          look further then what is being promoted and endlessly repeated to
-          infinity. Are you sure you're not sheep?
-        </p>
-
-        <p>
-          Not in a "party" mood or need to concentrate on work and need
-          something in the background? I understand when listening to the music
-          isn't your priority that you'd turn on some radio station and get to
-          work hearing those same tracks over and over and over and over and
-          over again endlessly. There is <strong
-            >so much music in the world that you can not even come close to
-            listen 2% of it!</strong
-          > Begint er nu een lampje te branden waar ik het over heb?
-        </p>
-
-        <h4>Werk/studie muziek</h4>
-
-        <p>
-          Zet deze mix maar eens op als achtergrondmuziek, volume niet heel hoog
-          maar als achtergrondmuziek. Waarom komt deze muziek <strong
-            >absoluut niet</strong
-          >
-           op de radio denk je? Waarom komt deze muziek hoe dan ook niet in de
-          buurt van "goed genoeg" om eens op radio te draaien, dat terwijl deze
-          muziek bij menig mens prima naar te luisteren is....?
-        </p>
-
-        <p>Wat denk je?</p>
-
-        <p>
-          Omdat het <strong>niet genoeg geld opleverd.</strong> Dat terwijl het
-          echt zeer goede muziek is die door menig mens gewaardeerd zal worden,
-          al helemaal ter afwisseling van diezelfde plaat die <strong
-            >elk uur</strong
-          > gedraaid wordt. Ik wordt er gewoon knettergek van en werken zonder
-          koptelefoon is voor mij geen optie op een kantoor die radio 586,
-          SlamFM en zelfs 3FM echt geen optie is voor mij omdat ik namelijk
-          altijd goed luister naar muziek en als die muziek
-          <strong
-            ><a href="https://www.youtube.com/watch?v=tITkm-sBHH8"
-              >vaak BEHOORLIJK tekortschiet en dan werkelijk zo'n plaat als
-              achter deze link ELK UUR opnieuw gedraaid wordt...</a
-            > Ja dan wordt ik natuurlijk letterlijk gestoord.</strong
-          >
-        </p>
-
-        <p>
-          Ik weet zeker dat er mensen op mijn blog zullen landen die van mening
-          zullen zijn dat ze niet eens in de buurt willen komen bij mensen die
-          naar dit soort <i>"veelal onsamenhangende teringherrie"</i>
-           luisteren, maar ik ben blij dat ik niet zo iemand ben en wel dusdanig
-          objectief muziek kan beoordelen en er lekker mijn voordeel mee kan
-          doen. Iedereen moet lekker vinden wat ie vind, maar muziekwise heb ik
-          de beste smaak, ik ben buitegewoon goed in het herkennen van
-          ethetische schoonheid dat er sprake moge zijn van hoogontwikkelde
-          sensitiviteit artistieke schoonheid te herkennen. Ik zal deze gave
-          niet slechts voor mij alleen houden en jullie delen wat voor
-          schoonheid ik allemaal tref terwijl ik soundcloud en bandcamp af crawl
-          op zoek naar het beste van het beste. Voor nu zal dat veel
-          electronische muziek betekenen dus als dat niet je ding is dan kan je
-          beter gaan en over een paar jaar nog eens kijken, of wegblijven net
-          wat jij wil. Niemand hoeft op mijn blog te zijn en muziek beluisteren
-          hier is echt op eigen initiatief dus ga niet lopen mouwen dat het
-          kutmuziek is want dat is het niet dat heb ik vastgesteld als
-          muziekexpert.
-        </p>
-
-        <p>Nu ff een snelle headbanger:</p>
-
-        <strong>Hoppaaa, gas der op en programmmeren met die handel!</strong>
-      </div>
 
       <p>
-        Programmeren? Ja programmeren, dat is wat ik doe op deze muziek, ik bouw
-        een feestje en een dikke applicatie met een MERN stack helemaal zelf en
-        al headbangend leer ik mijzelf in een half jaar een complete full stack
-        JavaScript framework aan waardoor ik echt alles kan maken wat ik maar
-        kan verzinnen en ik ga daar lekker mee door zelfstandig met lekker
-        beukmuziek die me lekker gaande houdt want ik ga goed geld verdienen, ik
-        ga daar niet mee stoppen tot
+        <strong
+          >Provide yourself with some background music and start this video
+          before you start this way too long story!</strong
+        >
       </p>
 
-      <h3>🌐 Discovering Musical Freedom</h3>
+      <h3>Approach:</h3>
+      <p>
+        If you're an experienced software or web developer like me, you
+        understand well that you can't just randomly start a project of this
+        magnitude. If you don't even have the idea of what it is in its entirety
+        that you're going to build in a structured and coordinated way, it's
+        impossible to estimate where to start. You can't implement "nothing"
+        into "nothing." Also, you can't lay the groundwork for something you
+        don't know because there is no general foundation for the "unknown."
+        That foundation already exists, and I'm literally talking about the
+        technology we're working with that is suitable for "general use." Even
+        `npm init` (for the JS & Node.js experts), an action that is usually
+        skipped, although I don't rule out that there are JS developers who have
+        different experiences, it wouldn't exist for no reason. Software design
+        was extremely important to be completely thought out before the
+        development process could begin.
+      </p>
 
       <p>
-        I am not mad about it or angry really because there are places on the
-        internet like
-        <i>Soundcloud</i> and <i>Bandcamp</i> and even <i>Youtube</i>
-         providing their service to any artist to publish their sound, and I am
-        very content with that. I am very happy that I have found a way to
-        discover new music for free—free because the producer of the music
-        decided that it should be possible to listen to their hard work to
-        perfection and not expect anything in return from someone like me
-        profiting off their creation. 🎧 The artists I listen to have that kind
-        of mindset and are mostly happy with the fact that I or whoever
-        appreciates the music the way they would make it without any commercial
-        interest.
+        I had to make sure that this project could go into production before the
+        deadline I set, the deadline being "Before the end of my life." It comes
+        with enormous stakes.
       </p>
 
-      <h3>💖 Gratitude to Music Creators</h3>
+      <h3>The idea:</h3>
+      <p>
+        The idea is very clear. I am a developer and enjoy listening to
+        non-mainstream music. You know what? I'm going to create a music blog.
+      </p>
 
       <p>
-        If you are publishing your music on a platform like <i>Soundcloud</i>
-         or <i>Bandcamp</i>, you are not expecting to make money from it and you
-        are not expecting to be famous from it. You are just sharing your
-        creation with the world and hope someone (or many) will like it—being
-        the way you think the music should sound, and the result is ready to be
-        published because of your personal satisfaction. I will thank you deeply
-        from my heart because if people like you did not exist, I would miss an
-        important piece of my life that is often responsible for a mood change
-        from unmotivated to energetic and providing me with fuel just by playing
-        something you worked on. 🎶 I can also become happy from sad by being
-        touched by mostly a new piece of music I hear, and there are even times
-        I feel becoming emotional from music—most of the times not even by a
-        vocal message but from a level of perfection that I feel grateful to
-        have the right and situation I am able to observe and listen and being
-        aware some people don't even have means to be able to experience what I
-        do at that time.
+        I knew right away that it's an incorrect term that I'm giving it because
+        I already knew that on this "blog," I would never write daily messages
+        about how my day has been. But until now, it's still not clear to me
+        what term I can give it. So, I decided to go full steam ahead for a
+        better world for at least a few hours.
       </p>
-
-      <h3>📢 Open Ears, Open Heart:</h3>
 
       <p>
-        I think I told enough about myself and personal experience and
-        relationship with music and even the producers of it in my heart
-        enabling me to experience. If you think all music on this website sucks,
-        I'm sorry, you are not alone at all. Sucks for you because if you did
-        like it very much, you would have a place to go where you would get
-        easily provided something new and beautiful without even the effort
-        finding it that I did for you. I will never post anything I do not find
-        beautiful enough, but please suggest me anything and I will be open to
-        it except for such big commercial musicians and labels not gaining any
-        noticeable effect from someone like me sharing their music and put them
-        in a spotlight. Probably I hate their music anyway, but don't hold back,
-        share even if you have doubts. 🎤 I really do research into any
-        suggestion and even click often on music I come across that gave me an
-        impression that it probably sucks, and almost always it does, but I have
-        had exceptions to this rule so there is not really a choice to "miss"
-        something genius because of its cover for example.
+        Okay, I'm already bored writing this "into production release note, a
+        moment ago I felt motivation and a complete story to write down for
+        everybody, but after this much it already feels like very much boring
+        work and generally I do never do somethig I don't feel like doing and on
+        the other hand I always do what I like to do and basically do whatever I
+        want, I need a secretary for this, if you are interested fo fulfill this
+        role in such an high-end environment on volentarly basis, don't hesitate
+        to contact me and maybe you will find the exact place you want to be.
       </p>
-      <Footer />
-      <script>
-        import "../scripts/menu.js";
-      </script>
+
+      <p>
+        I can always use a good assisteny especially because of my physical
+        condition I suffer feeling tyred and discomfort working on boring stuff
+        or any other stuff that is not appealing to me and that is exactly where
+        you come in and SAVE THE DAY!
+      </p>
+
+      <p>Working for me wouldn't make you an assistent, you'd be a HERO!</p>
+
+      <p>Well... let me know if you think about it.😊</p>
     </div>
-  </body>
-</html>
+
+    <p>
+      Lastly will <stronga>promise</stronga> that this release note will contain
+      complete information before the deadline expires!
+    </p>
+  </div>
+
+  <!--     
+
+    <h3>🎵 Unlocking Musical Freedom</h3>
+    <p>
+      If most of the music you know has been from mainstream radio or suggested
+      by commercial services/apps, you might not have realized that your freedom
+      of choice and which things to love may not be truly your own. Perhaps
+      discovering new music by making some time in your schedule and going on a
+      journey of exploration could lead you to something you'd love even more
+      than you ever thought possible. If you have never tried this... Doesn't it
+      make sense to start doing that? 🌍 Way much more than half of the people
+      on earth find music important in their lives, so I hope this idea could
+      inspire someone to get started with the same thing I have done from a very
+      young age. It comes natural to me, mostly because the music on the radio
+      always annoyed me because the much bigger bunch of it was boring to me.
+    </p>
+    <h3>🔄 Breaking the Repetition Cycle</h3>
+    <p>
+      The fact is that I hate hearing some songs being repeatedly played like
+      every hour, and hearing a song even 4 times a day is way too often and way
+      and way and way too often. I really don't get people accepting this from
+      happening to them—literally being shoved some selected songs down their
+      throats again and again and again without stopping for months per track
+      and always having certain tracks to repeat endlessly. 🤔 I asked people
+      lots of times if they find that annoying, and if they still enjoy that
+      certain song I heard over and over, and most people say they are used to
+      it but are not enjoying it anymore after literally hearing it for 50+
+      times. 📻 I have to conclude that these commercial radio stations behaving
+      themselves this way to their own listeners have lots of power because for
+      many, there is no alternative, and they are forced to listen to it in a
+      certain and common situation in their lives. Finding new music that is
+      really easy on the ears of many and even give people energy and party
+      vibes, if you think it is hard to find such...
+    </p>
+    <p>You're welcome!</p>
+    <p>
+      This is how easy it is to find real good music that is not boring as all
+      like that mainsteam sheeple radio shit looping the same shit endlessly
+      over and over.
+    </p>
+    <p>
+      Who are you? What are we? Do we have to obey the music selection of the
+      mainstream media without even realizing it? Why do so few people look
+      further then what is being promoted and endlessly repeated to infinity.
+      Are you sure you're not sheep?
+    </p>
+    <p>
+      Not in a "party" mood or need to concentrate on work and need something in
+      the background? I understand when listening to the music isn't your
+      priority that you'd turn on some radio station and get to work hearing
+      those same tracks over and over and over and over and over again
+      endlessly. There is <strong
+        >so much music in the world that you can not even come close to listen
+        2% of it!</strong
+      > Begint er nu een lampje te branden waar ik het over heb?
+    </p>
+    <h4>Werk/studie muziek</h4>
+    <p>
+      Zet deze mix maar eens op als achtergrondmuziek, volume niet heel hoog
+      maar als achtergrondmuziek. Waarom komt deze muziek <strong
+        >absoluut niet</strong
+      > op de radio denk je? Waarom komt deze muziek hoe dan ook niet in de
+      buurt van "goed genoeg" om eens op radio te draaien, dat terwijl deze
+      muziek bij menig mens prima naar te luisteren is....?
+    </p>
+    <p>Wat denk je?</p>
+    <p>
+      Omdat het <strong>niet genoeg geld opleverd.</strong> Dat terwijl het echt
+      zeer goede muziek is die door menig mens gewaardeerd zal worden, al
+      helemaal ter afwisseling van diezelfde plaat die <strong>elk uur</strong>
+       gedraaid wordt. Ik wordt er gewoon knettergek van en werken zonder
+      koptelefoon is voor mij geen optie op een kantoor die radio 586, SlamFM en
+      zelfs 3FM echt geen optie is voor mij omdat ik namelijk altijd goed
+      luister naar muziek en als die muziek <strong
+        ><a href="https://www.youtube.com/watch?v=tITkm-sBHH8"
+          >vaak BEHOORLIJK tekortschiet en dan werkelijk zo'n plaat als achter
+          deze link ELK UUR opnieuw gedraaid wordt...</a
+        > Ja dan wordt ik natuurlijk letterlijk gestoord.</strong
+      >
+    </p>
+    <p>
+      Ik weet zeker dat er mensen op mijn blog zullen landen die van mening
+      zullen zijn dat ze niet eens in de buurt willen komen bij mensen die naar
+      dit soort
+
+      <i>"veelal onsamenhangende teringherrie"</i> luisteren, maar ik ben blij
+      dat ik niet zo iemand ben en wel dusdanig objectief muziek kan beoordelen
+      en er lekker mijn voordeel mee kan doen. Iedereen moet lekker vinden wat
+      ie vind, maar muziekwise heb ik de beste smaak, ik ben buitegewoon goed in
+      het herkennen van ethetische schoonheid dat er sprake moge zijn van
+      hoogontwikkelde sensitiviteit artistieke schoonheid te herkennen. Ik zal
+      deze gave niet slechts voor mij alleen houden en jullie delen wat voor
+      schoonheid ik allemaal tref terwijl ik soundcloud en bandcamp af crawl op
+      zoek naar het beste van het beste. Voor nu zal dat veel electronische
+      muziek betekenen dus als dat niet je ding is dan kan je beter gaan en over
+      een paar jaar nog eens kijken, of wegblijven net wat jij wil. Niemand
+      hoeft op mijn blog te zijn en muziek beluisteren hier is echt op eigen
+      initiatief dus ga niet lopen mouwen dat het kutmuziek is want dat is het
+      niet dat heb ik vastgesteld als muziekexpert.
+    </p>
+    <p>Nu ff een snelle headbanger:</p>
+    <strong>Hoppaaa, gas der op en programmmeren met die handel!</strong>
+  </div>
+  <p>
+    Programmeren? Ja programmeren, dat is wat ik doe op deze muziek, ik bouw een
+    feestje en een dikke applicatie met een MERN stack helemaal zelf en al
+    headbangend leer ik mijzelf in een half jaar een complete full stack
+    JavaScript framework aan waardoor ik echt alles kan maken wat ik maar kan
+    verzinnen en ik ga daar lekker mee door zelfstandig met lekker beukmuziek
+    die me lekker gaande houdt want ik ga goed geld verdienen, ik ga daar niet
+    mee stoppen tot
+  </p>
+  <h3>🌐 Discovering Musical Freedom</h3>
+  <p>
+    I am not mad about it or angry really because there are places on the
+    internet like
+    <i>Soundcloud</i> and <i>Bandcamp</i> and even <i>Youtube</i> providing
+    their service to any artist to publish their sound, and I am very content
+    with that. I am very happy that I have found a way to discover new music for
+    free—free because the producer of the music decided that it should be
+    possible to listen to their hard work to perfection and not expect anything
+    in return from someone like me profiting off their creation. 🎧 The artists
+    I listen to have that kind of mindset and are mostly happy with the fact
+    that I or whoever appreciates the music the way they would make it without
+    any commercial interest.
+  </p>
+  <h3>💖 Gratitude to Music Creators</h3>
+  <p>
+    If you are publishing your music on a platform like <i>Soundcloud</i> or <i
+      >Bandcamp</i
+    >, you are not expecting to make money from it and you are not expecting to
+    be famous from it. You are just sharing your creation with the world and
+    hope someone (or many) will like it—being the way you think the music should
+    sound, and the result is ready to be published because of your personal
+    satisfaction. I will thank you deeply from my heart because if people like
+    you did not exist, I would miss an important piece of my life that is often
+    responsible for a mood change from unmotivated to energetic and providing me
+    with fuel just by playing something you worked on. 🎶 I can also become
+    happy from sad by being touched by mostly a new piece of music I hear, and
+    there are even times I feel becoming emotional from music—most of the times
+    not even by a vocal message but from a level of perfection that I feel
+    grateful to have the right and situation I am able to observe and listen and
+    being aware some people don't even have means to be able to experience what
+    I do at that time.
+  </p>
+  <h3>📢 Open Ears, Open Heart:</h3>
+  <p>
+    I think I told enough about myself and personal experience and relationship
+    with music and even the producers of it in my heart enabling me to
+    experience. If you think all music on this website sucks, I'm sorry, you are
+    not alone at all. Sucks for you because if you did like it very much, you
+    would have a place to go where you would get easily provided something new
+    and beautiful without even the effort finding it that I did for you. I will
+    never post anything I do not find beautiful enough, but please suggest me
+    anything and I will be open to it except for such big commercial musicians
+    and labels not gaining any noticeable effect from someone like me sharing
+    their music and put them in a spotlight. Probably I hate their music anyway,
+    but don't hold back, share even if you have doubts. 🎤 I really do research
+    into any suggestion and even click often on music I come across that gave me
+    an impression that it probably sucks, and almost always it does, but I have
+    had exceptions to this rule so there is not really a choice to "miss"
+    something genius because of its cover for example. 
+  </p> -->
+</BaseLayout>

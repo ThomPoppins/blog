@@ -27,10 +27,10 @@ pnpm-lock.yaml
 public
 
 # Add fonts to git
-!public/fonts
+!public/fonts/DistantGalaxy.ttf
 
 # Images not to be ignored
 !public/images/blog/layout/GIF/colorbar.gif
 !public/images/blog/layout/GIF/glasslike-visual.gif
 
-!public/images/blog/venetian-snares/
+!public/images/blog/venetian-snares/AN.jpg

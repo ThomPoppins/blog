@@ -1,9 +1,11 @@
 {
     "editor.formatOnSave": true,
     "cSpell.words": [
+        "bandcamp",
         "breakcore",
         "Hellraiser",
-        "oldschool"
+        "oldschool",
+        "soundcloud"
     ],
     "editor.tabSize": 2,
     "workbench.editor.dragToOpenWindow": false

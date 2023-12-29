@@ -18,7 +18,7 @@
     "@astrojs/react": "^3.0.7",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
-    "astro": "^4.0.3",
+    "astro": "^4.0.8",
     "eslint-mdx": "^3.1.1",
     "eslint-plugin-mdx": "^3.1.1",
     "github-markdown-css": "^5.4.0",
@@ -26,9 +26,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@sentry/astro": "^7.91.0",
+    "@spotlightjs/astro": "^1.0.9",
     "@typescript-eslint/parser": "^6.16.0",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.31.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0"
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0"
   }
 }
