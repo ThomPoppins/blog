@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@100,12;169,24&display=swap');
+/* Styles for design and structure of media playes embedded from external services. */
+@import url("players/bandcamp.css");
+@import url("players/soundcloud.css");
+@import url("players/youtube.css");
+
+/* */
+
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@100,12;169,24&display=swap");
 
 @font-face {
-  font-family: 'DistantGalaxy';
-  src: url('/fonts/DistantGalaxy.ttf');
+  font-family: "DistantGalaxy";
+  src: url("/fonts/DistantGalaxy.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,10 +27,9 @@ html {
   height: 100vh;
   min-height: 100vh;
   /* background-size: 200% 200%; */
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif'), repeat;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif"), repeat;
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   animation: gradient 51s ease-in-out infinite;
-
 }
 
 @keyframes gradient {
@@ -38,10 +44,9 @@ html {
   }
 }
 
-
 @keyframes spotlight {
   0% {
-    opacity: 0.00;
+    opacity: 0;
     background-position: 0% 50%;
     background-size: 100%;
   }
@@ -56,7 +61,7 @@ html {
     background-size: 104%;
   }
   75% {
-    opacity:0.79;
+    opacity: 0.79;
     background-position: 50% 50%;
     background-size: 92%;
   }
@@ -67,11 +72,10 @@ html {
   }
 }
 
-
 body {
   padding: 0;
   margin: 0 auto;
-  max-width:130ch;
+  max-width: 130ch;
   padding: 1rem;
   line-height: 1.28;
 }
@@ -93,11 +97,11 @@ body {
 h1 {
   margin: 0;
   color: purple;
-  font-family: 'Nosifer', cursive;
+  font-family: "Nosifer", cursive;
   font-size: 9rem;
   text-align: center;
   color: #fff;
-  background-image: url('/images/blog/layout/GIF/colorbar.gif') repeat-x;
+  background-image: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
 }
 
 h2 {
@@ -120,7 +124,7 @@ h4 {
 
 h5 {
   color: #e0e80c;
-  font-size: 2.0em;
+  font-size: 2em;
   font-family: DistantGalaxy, sans-serif;
 }
 
@@ -151,11 +155,11 @@ hr {
   border: none;
   margin-bottom: 2px;
   height: 10px; /* Adjust as needed */
-  background: url('/images/blog/layout/GIF/colorbar.gif') repeat-x;
+  background: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
 }
 
 iframe {
-  width: 100%!important;
+  width: 100% !important;
   margin-bottom: 30px;
 }
 
@@ -185,10 +189,10 @@ table tbody .pub-date {
 }
 
 table tbody .author {
-  color:#002d30;
+  color: #002d30;
   font-weight: "900";
   font-size: 1.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: "50%";
   border: "0px";
   line-height: normal;
@@ -208,7 +212,7 @@ table tbody .author p {
   left: 0;
   border-radius: 25px;
   margin-top: 0px;
-  width:100%;
+  width: 100%;
   height: 100vh;
 
   /* text-align: center;
@@ -220,29 +224,43 @@ table tbody .author p {
   /* border-radius: 15%; */
   /* /* padding-bottom:30px; */
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
 
-  animation: gradient 30s ease-in-out infinite, 120s spotlight, flubber 120s ease-in-out infinite;
-  /* text-align: center; */ 
+  animation: gradient 30s ease-in-out infinite, 120s spotlight,
+    flubber 120s ease-in-out infinite;
+  /* text-align: center; */
   display: flex;
-  opacity: 0.50;
+  opacity: 0.5;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 96vh; /*or any other value that fits your needs */
-
 }
 
 @keyframes flubber {
-  0% { border-radius: 0%; }
-  50% { border-radius: 40%; }
-  100% { border-radius: 0px; }
+  0% {
+    border-radius: 0%;
+  }
+  50% {
+    border-radius: 40%;
+  }
+  100% {
+    border-radius: 0px;
+  }
 }
 
 @keyframes elastic {
-  0% { padding-left: 0px; padding-right: 0 }
-  50% { padding-left: 100px; padding-right: 100% }
-  100% { border-radius: 0px; }
+  0% {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+  50% {
+    padding-left: 100px;
+    padding-right: 100%;
+  }
+  100% {
+    border-radius: 0px;
+  }
 }
 
 .welcome-header {
@@ -258,19 +276,18 @@ table tbody .author p {
   height: 100%; /* or any other value that fits your needs */
 }
 
-
 .welcome-text-island {
-  width:100%;
+  width: 100%;
   text-align: center;
   height: auto;
   border-radius: 30px;
   padding-top: 60px;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 60px;
   animation: gradient 35s ease-in-out infinite;
-opacity: 1;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
+  opacity: 1;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
 }
 
 .proudly-presented-island {
@@ -278,9 +295,9 @@ opacity: 1;
   padding-bottom: 0px;
   padding-left: 30px;
   padding-right: 30px;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
-  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out, flubber 1000s ease-in-out infinite;
-
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
+  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out,
+    flubber 1000s ease-in-out infinite;
 }
 
 .stabalizing-island {
@@ -288,8 +305,9 @@ opacity: 1;
   padding-bottom: 0px;
   padding-left: 30px;
   padding-right: 30px;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
-  animation: gradient 78s ease-in-out infinite, spotlight 200s ease-in-out, flubber 100s ease-in-out infinite;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
+  animation: gradient 78s ease-in-out infinite, spotlight 200s ease-in-out,
+    flubber 100s ease-in-out infinite;
 }
 
 .proudly-presented-island {
@@ -298,8 +316,9 @@ opacity: 1;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
-  animation: gradient 76s ease-in-out infinite, spotlight 200s ease-in-out, flubber 100s ease-in-out infinite;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
+  animation: gradient 76s ease-in-out infinite, spotlight 200s ease-in-out,
+    flubber 100s ease-in-out infinite;
 }
 
 .rainbowroad-downward-deep-into-the-underground {
@@ -308,11 +327,10 @@ opacity: 1;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; 
-  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out, flubber 1000s ease-in-out infinite;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
+  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out,
+    flubber 1000s ease-in-out infinite;
 }
-
-
 
 .post-image {
   margin-bottom: 30px;
@@ -320,16 +338,16 @@ opacity: 1;
   justify-content: center;
 }
 
-.purple-section {
+section {
   text-align: justify;
   text-justify: inter-word;
-  background-color: #4b08d2;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
   border-radius: 40px;
   padding: 40px;
   margin-bottom: 30px;
 }
 
-.purple-section div {
+.section div {
   opacity: 1;
 }
 
@@ -343,7 +361,9 @@ opacity: 1;
   margin-bottom: 30px;
 }
 
-.release-of-the-week-section p, .release-of-the-week-section .header-island, .release-of-the-week-section .header-island h2 {
+.release-of-the-week-section p,
+.release-of-the-week-section .header-island,
+.release-of-the-week-section .header-island h2 {
   background-color: #4b08d2;
   padding: 10px;
   color: #fff;
@@ -366,7 +386,7 @@ opacity: 1;
 
   width: 100%;
   text-align: center;
-  
+
   /* background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; */
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   /* animation: gradient 50s ease-in-out infinite; */
@@ -374,7 +394,7 @@ opacity: 1;
 }
 
 .section-island p {
-  font-size: 1.2rem ;
+  font-size: 1.2rem;
 }
 
 .spotlight-release {
@@ -401,15 +421,16 @@ a {
   color: #9900ff;
 }
 
-a:visited, a:visited {
+a:visited,
+a:visited {
   color: rgb(140, 140, 140);
-  font-weight:100;
+  font-weight: 100;
 }
 
 .credits-section {
   text-align: justify;
   text-justify: inter-word;
-  background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat;
+  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
   color: #4b08d2;
   border-radius: 40px;
   padding: 40px;
@@ -431,19 +452,17 @@ a:visited, a:visited {
   color: #ea00ff;
 }
 
-
 .release {
   width: 100%;
 }
 
-.post-main-image, .post-main-image img {
+.post-main-image,
+.post-main-image img {
   width: 100%;
   background-color: #4b08d2;
   padding: 10px;
   height: auto;
 }
-
-
 
 /* Intro text */
 
@@ -469,45 +488,9 @@ a:visited, a:visited {
   background-color: #ff9776;
 }
 
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-  /* display: flex; */
-  /* justify-content: space-between;
-  align-items: center; */
-  /* color: #fff;
-  padding: 0 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1; */
-}
-
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  background-color: #ff9776;
-}
-
 .expanded {
   display: unset;
 }
-
-/* Embed containers */
 
 .bandcamp-embed-container {
   /* position: relative; */
@@ -522,7 +505,6 @@ a:visited, a:visited {
   margin-bottom: 30px;
 }
 
-
 /* Make Youtube video responsive */
 .youtube-embed-container {
   position: relative;
@@ -531,8 +513,6 @@ a:visited, a:visited {
   padding-bottom: 56.25%;
   margin-bottom: 30px;
 }
-
-
 .youtube-video {
   position: absolute;
   top: 0;
@@ -542,13 +522,13 @@ a:visited, a:visited {
 }
 /* End Youtube video responsive styles */
 
-
 .label {
   border-bottom: 4px solid grey;
   padding-bottom: 35px;
 }
 
-.bottom-release-info, .release-info {
+.bottom-release-info,
+.release-info {
   margin-bottom: 30px;
   font-style: italic;
 }
