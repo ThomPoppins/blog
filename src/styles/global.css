@@ -27,9 +27,11 @@ html {
   height: 100vh;
   min-height: 100vh;
   /* background-size: 200% 200%; */
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif"), repeat;
+  /* background: url("/images/blog/layout/GIF/.gif"), repeat; */
+  background: url("/images/blog/layout/GIF/SLOWEREARLYDISCOSHIT.gif"), repeat;
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
-  animation: gradient 51s ease-in-out infinite;
+  animation: gradient 15s ease-in-out infinite,
+    backZoomer 15s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -44,19 +46,35 @@ html {
   }
 }
 
+@keyframes paddingAnimation {
+  0%,
+  100% {
+    padding-top: 0px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+  }
+  50% {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+  }
+}
+
 @keyframes spotlight {
   0% {
-    opacity: 0;
+    opacity: 0.8;
     background-position: 0% 50%;
-    background-size: 100%;
+    background-size: 80%;
   }
   25% {
-    opacity: 0.5;
+    opacity: 0.65;
     background-position: 50% 50%;
     background-size: 114%;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.35;
     background-position: 100% 50%;
     background-size: 104%;
   }
@@ -72,12 +90,41 @@ html {
   }
 }
 
+@keyframes backzoomer {
+  0% {
+    /* opacity: 0; */
+    background-position: 0% 50%;
+    background-size: 100%;
+  }
+  25% {
+    /* opacity: 0.5; */
+    background-position: 50% 50%;
+    background-size: 114%;
+  }
+  50% {
+    /* opacity: 0.6; */
+    background-position: 100% 50%;
+    background-size: 104%;
+  }
+  75% {
+    /* opacity: 0.79; */
+    background-position: 50% 50%;
+    background-size: 92%;
+  }
+  100% {
+    /* opacity: 1; */
+    background-position: 0% 50%;
+    background-size: 100%;
+  }
+}
+
 body {
   padding: 0;
   margin: 0 auto;
   max-width: 130ch;
   padding: 1rem;
   line-height: 1.28;
+  animation: paddingAnimation 6s infinite;
 }
 
 /* height: 100vh;
@@ -208,7 +255,7 @@ table tbody .author p {
 
 .main-header-island {
   /* position: absolute; */
-  top: 40px;
+  top: 0px;
   left: 0;
   border-radius: 25px;
   margin-top: 0px;
@@ -285,7 +332,7 @@ table tbody .author p {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 60px;
-  animation: gradient 35s ease-in-out infinite;
+  animation: gradient 35s ease-in-out infinite, paddingAnimation 6s infinite;
   opacity: 1;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
 }
@@ -296,7 +343,7 @@ table tbody .author p {
   padding-left: 30px;
   padding-right: 30px;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out,
+  animation: gradient 77s ease-in-out infinite, spotlight 80s ease-in-out,
     flubber 1000s ease-in-out infinite;
 }
 
@@ -539,7 +586,7 @@ a:visited {
     display: block;
     position: static;
     width: auto;
-    background: none;
+    background-color: purple;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
