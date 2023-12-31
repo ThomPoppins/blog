@@ -2,6 +2,7 @@
 @import url("players/bandcamp.css");
 @import url("players/soundcloud.css");
 @import url("players/youtube.css");
+@import url("layout/navigation/links.css");
 
 /* */
 
@@ -520,25 +521,6 @@ a:visited {
   margin-right: 30px;
 }
 
-/* nav styles */
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
-}
-
-.expanded {
-  display: unset;
-}
-
 .bandcamp-embed-container {
   /* position: relative; */
   width: 100%;
@@ -578,33 +560,4 @@ a:visited {
 .release-info {
   margin-bottom: 30px;
   font-style: italic;
-}
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background-color: purple;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* color: #fff; */
-    /* padding: 0 1rem; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* z-index: 1; */
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
 }
