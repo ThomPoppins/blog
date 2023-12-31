@@ -17,33 +17,52 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "SundropsDisplay";
+  src: url("/fonts/SundropsDisplay.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #f1f5f9;
   color: #fff;
-  font-family: sans-serif;
+  font-family: DistantGalaxy, sans-serif;
   text-align: justify;
-  height: 100vh;
   min-height: 100vh;
-  /* background-size: 200% 200%; */
+  background-size: 200% 200%;
   /* background: url("/images/blog/layout/GIF/.gif"), repeat; */
-  background: url("/images/blog/layout/GIF/SLOWEREARLYDISCOSHIT.gif"), repeat;
+  background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   animation: gradient 15s ease-in-out infinite,
-    backZoomer 15s ease-in-out infinite;
+    moonZoom 370s ease-in-out infinite;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 32%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 50%;
+  }
+}
+
+@keyframes moonZoom {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 40%;
+  }
+  100% {
+    background-size: 100%;
   }
 }
 
@@ -122,10 +141,10 @@ html {
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 130ch;
+  max-width: 120ch;
   padding: 1rem;
   line-height: 1.28;
-  animation: paddingAnimation 6s infinite;
+  animation: paddingAnimation 35s infinite;
 }
 
 /* height: 100vh;
@@ -145,7 +164,7 @@ body {
 h1 {
   margin: 0;
   color: purple;
-  font-family: "Nosifer", cursive;
+  font-family: "SundropsDisplay", cursive;
   font-size: 9rem;
   text-align: center;
   color: #fff;
@@ -430,7 +449,6 @@ section {
 .section-island {
   padding-top: 80px;
   padding-bottom: 80px;
-  margin-bottom: 30px;
 
   width: 100%;
   text-align: center;
