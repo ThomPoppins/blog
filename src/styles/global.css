@@ -3,7 +3,7 @@
 @import url("players/soundcloud.css");
 @import url("players/youtube.css");
 @import url("layout/navigation/links.css");
-@import url("layout/content/text.css");
+@import url("content/text.css");
 
 /* */
 
@@ -39,8 +39,7 @@ html {
   /* background: url("/images/blog/layout/GIF/.gif"), repeat; */
   background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
-  animation: gradient 15s ease-in-out infinite,
-    moonZoom 370s ease-in-out infinite;
+  animation: gradient 15s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -142,10 +141,15 @@ html {
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 120ch;
+  max-width: 90ch;
   padding: 1rem;
   line-height: 1.28;
-  animation: paddingAnimation 35s infinite;
+}
+
+/* */
+iframe html {
+  margin-left: 100px;
+  margin-right: auto;
 }
 
 /* height: 100vh;
@@ -158,8 +162,8 @@ body {
   box-sizing: border-box;
 }
 
-.red-color {
-  color: rgb(224, 232, 12);
+.color-neon-green {
+  color: #18f506;
 }
 
 h1 {

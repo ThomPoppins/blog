@@ -1,0 +1,17 @@
+@keyframes rocketPumper {
+  0% {
+    background-size: 10%;
+  }
+  12% {
+    background-size: 100%;
+  }
+  25% {
+    background-size: 10%;
+  }
+  50% {
+    background-size: 75%;
+  }
+  100% {
+    background-size: 10%;
+  }
+}

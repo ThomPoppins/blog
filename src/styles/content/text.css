@@ -1,0 +1,14 @@
+.sub-title-text {
+  color: #e0e80c;
+  font-size: 2.3em;
+  font-family: DistantGalaxy, sans-serif;
+  font-size: 3.2rem !important;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
