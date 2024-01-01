@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "ce4076a2a34cc0c2",
+    "id": "28c14502b7435788",
     "type": "split",
     "children": [
       {
-        "id": "bb711686a95b0763",
+        "id": "25252d7d77758f50",
         "type": "tabs",
         "children": [
           {
-            "id": "9d41e27b5b50ef6c",
+            "id": "cf8d9086f15f752d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5af14a15f6cba4d8",
+    "id": "3ab21d0a7b2dc01d",
     "type": "split",
     "children": [
       {
-        "id": "04ae194a2d3b65a6",
+        "id": "eee842294687d779",
         "type": "tabs",
         "children": [
           {
-            "id": "ec42eb29f2159a14",
+            "id": "eb857cc924b95c6a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "a1b89287123b9720",
+            "id": "e68a2c0db41604a4",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "86989c38b407c828",
+            "id": "a14ac5e8170a7f11",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 523.5
   },
   "right": {
-    "id": "61f0100df2473eb9",
+    "id": "c057b9059a8f70c4",
     "type": "split",
     "children": [
       {
-        "id": "cfdc9fb2d7b8e4b4",
+        "id": "b1d4d2513353b590",
         "type": "tabs",
         "children": [
           {
-            "id": "f4fd229441e06c70",
+            "id": "6b0e8ac99bb218b1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "70e1ad734b346992",
+            "id": "35978f6eaec30d81",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1b7b82ea0c6d07f0",
+            "id": "84ef9591e4ad572e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "aff3d8c5c536fbed",
+            "id": "21da1e0bce0b03ba",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Welcome.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -138,6 +130,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-tts:Text to Speech": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,19 +139,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d41e27b5b50ef6c",
+  "active": "cf8d9086f15f752d",
   "lastOpenFiles": [
-    "devdocs/nl/preact-in-astro.md",
-    "devdocs/nl/preact-in-Astro-gebruiken.md",
-    "devdocs/nl/2024-01-01.md",
-    "devdocs/nl/10-tips-voor-een-veilig-domeinnaam.md",
-    "devdocs/nl/10-tips-voor-een-veilig-domeinnaam copy.md",
-    "devdocs/nl",
-    "devdocs/import-data-from-page-corresponding-to-url-address.md",
-    "devdocs/preact-in-astro.md",
-    "devdocs/use-preact-in-astro.md",
-    "devdocs",
-    "create a link.md",
-    "Welcome.md"
+    "UN-RADIO/devdocs/nl/10-tips-voor-een-veilig-domeinnaam copy.md",
+    "UN-RADIO/devdocs/nl/10-tips-voor-een-veilig-domeinnaam.md",
+    "UN-RADIO/devdocs/nl/astrojs-tailwind.md",
+    "UN-RADIO/devdocs/nl/preact-in-astro.md",
+    "UN-RADIO/devdocs/nl/2024-01-01.md",
+    "UN-RADIO/devdocs/nl/preact-in-Astro-gebruiken.md",
+    "UN-RADIO/devdocs/nl",
+    "UN-RADIO/devdocs/import-data-from-page-corresponding-to-url-address.md"
   ]
 }
