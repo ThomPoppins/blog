@@ -117,6 +117,18 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PsychofunRegular";
+  src: url("/fonts/PsychofunRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .ankh-sanctuary {
   font-family: "AnkhSanctuary";
+}
+
+.psychofun-regular {
+  font-family: "PsychofunRegular";
 }
