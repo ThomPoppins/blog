@@ -1,13 +1,16 @@
 {
-    "editor.formatOnSave": true,
-    "cSpell.words": [
-        "bandcamp",
-        "breakcore",
-        "Hellraiser",
-        "oldschool",
-        "soundcloud"
-    ],
-    "editor.tabSize": 2,
-    "workbench.editor.dragToOpenWindow": false,
-    "glassit.alpha": 225
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "bandcamp",
+    "breakcore",
+    "Flatlife",
+    "Hardtechno",
+    "Hellraiser",
+    "oldschool",
+    "soundcloud",
+    "Tekno"
+  ],
+  "editor.tabSize": 2,
+  "workbench.editor.dragToOpenWindow": false,
+  "glassit.alpha": 225
 }
