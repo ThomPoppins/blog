@@ -6,14 +6,78 @@
       {
         "id": "25252d7d77758f50",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "cf8d9086f15f752d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
+              "type": "markdown",
+              "state": {
+                "file": "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "990abd125238e595"
+          }
+        ]
+      },
+      {
+        "id": "b9c881391d7926ee",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "f9b0909f65853b1f",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "Domain",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4194544
+                      }
+                    },
+                    {
+                      "query": "",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14069084
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "990abd125238e595"
           }
         ]
       }
@@ -65,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523.5
+    "width": 204.5
   },
   "right": {
     "id": "c057b9059a8f70c4",
@@ -81,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md"
+              }
             }
           }
         ]
@@ -141,13 +209,19 @@
   },
   "active": "cf8d9086f15f752d",
   "lastOpenFiles": [
-    "UN-RADIO/devdocs/nl/10-tips-voor-een-veilig-domeinnaam copy.md",
+    "UN-RADIO/devdocs/nl/What you need to know about domain security and EPP codes.md",
+    "UN-RADIO/Hoe Rippling succesvol blijft groeien met Vercel en Nextjs.md",
+    "UN-RADIO/devdocs/nl/Domein",
+    "UN-RADIO/devdocs/nl/Vercel",
+    "UN-RADIO/devdocs/nl/preact-in-Astro-gebruiken.md",
+    "UN-RADIO/devdocs/import-data-from-page-corresponding-to-url-address.md",
     "UN-RADIO/devdocs/nl/10-tips-voor-een-veilig-domeinnaam.md",
+    "UN-RADIO/devdocs/nl/TypeScript/Begin met TypeScript met Astro.md",
+    "UN-RADIO/devdocs/nl/TypeScript",
+    "UN-RADIO/devdocs/nl/10-tips-voor-een-veilig-domeinnaam copy.md",
     "UN-RADIO/devdocs/nl/astrojs-tailwind.md",
     "UN-RADIO/devdocs/nl/preact-in-astro.md",
     "UN-RADIO/devdocs/nl/2024-01-01.md",
-    "UN-RADIO/devdocs/nl/preact-in-Astro-gebruiken.md",
-    "UN-RADIO/devdocs/nl",
-    "UN-RADIO/devdocs/import-data-from-page-corresponding-to-url-address.md"
+    "UN-RADIO/devdocs/nl"
   ]
 }

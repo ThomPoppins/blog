@@ -10,6 +10,7 @@ tags:
   [
     "Acid Techno",
     "Tekno",
+    "Flatlife",
     "Acid Tekno",
     "AcidCore",
     "Acid",
