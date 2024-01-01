@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "astro"
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
