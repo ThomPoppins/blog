@@ -120,8 +120,8 @@ iframe html {
 /* Headers */
 h1 {
   margin: 0;
-  color: purple;
-  font-family: "AnkhSanctuary", cursive;
+  color: #52ff97;
+  font-family: "PsychofunRegular", cursive;
   font-weight: 100;
   font-size: 4rem;
   text-align: center;
@@ -130,25 +130,26 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #52ff97;
+  margin-top: 0;
   font-size: 5rem;
   font-family: DistantGalaxy, sans-serif;
   font-weight: 100;
 }
 h3 {
-  color: #e0e80c;
+  color: #52ff97;
   font-size: 2.5em;
   font-family: DistantGalaxy, sans-serif;
 }
 
 h4 {
-  color: #e0e80c;
+  color: #52ff97;
   font-size: 2.3em;
   font-family: DistantGalaxy, sans-serif;
 }
 
 h5 {
-  color: #e0e80c;
+  color: #52ff97;
   font-size: 2em;
   font-family: DistantGalaxy, sans-serif;
 }
