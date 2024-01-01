@@ -84,7 +84,7 @@ html {
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 100ch;
+  max-width: 120ch;
   padding: 1rem;
   line-height: 1.28;
 }
@@ -123,7 +123,7 @@ h1 {
   color: #52ff97;
   font-family: "PsychofunRegular", cursive;
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 7rem;
   text-align: center;
   color: #fff;
   background-image: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
