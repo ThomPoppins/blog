@@ -1,0 +1,11 @@
+@keyframes moonZoom {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 40%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
