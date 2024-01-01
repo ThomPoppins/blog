@@ -1,0 +1,23 @@
+{
+  "defaultVoice": "Microsoft Frank - Dutch (Netherlands)",
+  "pitch": 1,
+  "rate": 1,
+  "volume": 1,
+  "speakLinks": false,
+  "speakFrontmatter": false,
+  "speakSyntax": false,
+  "speakTitle": true,
+  "speakCodeblocks": false,
+  "speakEmoji": false,
+  "speakComments": false,
+  "languageVoices": [
+    {
+      "language": "nl",
+      "voice": "Microsoft Frank - Dutch (Netherlands)"
+    },
+    {
+      "voice": "Microsoft Mark - English (United States)"
+    }
+  ],
+  "stopPlaybackWhenNoteChanges": false
+}
