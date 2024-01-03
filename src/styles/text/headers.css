@@ -1,0 +1,37 @@
+/* Headers */
+h1 {
+  margin: 0;
+  color: #52ff97;
+  font-family: "Nosifer", cursive;
+  font-weight: 100;
+  font-size: 7rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
+}
+
+h2 {
+  color: #52ff97;
+  margin-top: 0;
+  font-size: 5rem;
+  font-family: DistantGalaxy, sans-serif;
+  font-weight: 100;
+}
+
+h3 {
+  color: #52ff97;
+  font-size: 2.5em;
+  font-family: DistantGalaxy, sans-serif;
+}
+
+h4 {
+  color: #52ff97;
+  font-size: 2.3em;
+  font-family: DistantGalaxy, sans-serif;
+}
+
+h5 {
+  color: #52ff97;
+  font-size: 2em;
+  font-family: DistantGalaxy, sans-serif;
+}
