@@ -49,7 +49,7 @@ const { releaseDate, catalogNumber, label, country, genre, imgUrl, imgAlt } =
   <div>
     <p>Date: {releaseDate}</p>
     <p>Label: {label}</p>
-    <p>Catalog Number:</p>
+    {catalogNumber ? <p>Catalog Number:{catalogNumber}</p> : ""}
     <p>Country: {country}</p>
     <p>Genre: {genre}</p>
   </div>

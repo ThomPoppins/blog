@@ -6,35 +6,4 @@
   overflow: hidden;
 }
 
-.bandcamp-player-container iframe {
-  position: relative;
-  width: 100% !important;
-  height: 0;
-  overflow: hidden;
-}
 
-.bandcamp-embed {
-  position: relative;
-  width: 100% !important;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-}
-/* TEST:
-
-.bandcamp {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-
-.bandcamp iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
- */

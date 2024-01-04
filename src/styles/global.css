@@ -22,6 +22,7 @@
 
 /* Animation styles */
 @import url("animations/gradient.css");
+@import url("animations/spotlight.css");
 @import url("animations/moonZoom.css");
 
 html {
@@ -34,75 +35,10 @@ html {
   text-align: justify;
   min-height: 100vh;
   background-size: 200% 200%;
-  /* background: url("/images/blog/layout/GIF/.gif"), repeat; */
   background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
-  /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   animation: gradient 5s infinite;
 }
 
-@keyframes spotlight {
-  0% {
-    opacity: 0.8;
-    background-position: 0% 50%;
-    background-size: 80%;
-  }
-
-  25% {
-    opacity: 0.65;
-    background-position: 50% 50%;
-    background-size: 114%;
-  }
-
-  50% {
-    opacity: 0.35;
-    background-position: 100% 50%;
-    background-size: 104%;
-  }
-
-  75% {
-    opacity: 0.79;
-    background-position: 50% 50%;
-    background-size: 92%;
-  }
-
-  100% {
-    opacity: 1;
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-}
-
-@keyframes backzoomer {
-  0% {
-    /* opacity: 0; */
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-
-  25% {
-    /* opacity: 0.5; */
-    background-position: 50% 50%;
-    background-size: 114%;
-  }
-
-  50% {
-    /* opacity: 0.6; */
-    background-position: 100% 50%;
-    background-size: 104%;
-  }
-
-  75% {
-    /* opacity: 0.79; */
-    background-position: 50% 50%;
-    background-size: 92%;
-  }
-
-  100% {
-    /* opacity: 1; */
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-}
 
 body {
   padding: 0;
@@ -110,13 +46,15 @@ body {
   max-width: 120ch;
   padding: 1rem;
   line-height: 1.28;
+  text-align: start;
 }
 
-/* */
+
 iframe html {
   margin-left: 100px;
   margin-right: auto;
 }
+
 
 /* height: 100vh;
   margin: 0;
@@ -126,6 +64,10 @@ iframe html {
 
 * {
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }
 
 .color-neon-green {
