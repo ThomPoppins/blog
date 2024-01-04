@@ -1,0 +1,7 @@
+a {
+  color: greenyellow;
+}
+
+a:visited {
+  color: #9900ff;
+}

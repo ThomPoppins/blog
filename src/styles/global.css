@@ -1,12 +1,28 @@
+/**
+ * This CSS file imports various stylesheets for different components and features of the application.
+ * It includes font styles, media player styles, navigation styles, text styles, and animation styles.
+ * The imported stylesheets are organized into different directories for better organization and maintainability.
+ * 
+ * FILEPATH: /c:/Users/un-ra/Documents/Apps/uN-RADIo/src/styles/global.css
+ */
 @import url("fonts.css");
+
+/* Menu and navigation styles */
+@import url("layout/navigation/links.css");
 
 /* Styles for design and structure of media playes embedded from external services. */
 @import url("players/bandcamp.css");
 @import url("players/soundcloud.css");
 @import url("players/youtube.css");
-@import url("layout/navigation/links.css");
+
+
+/* Text styles */
+@import url("text/headers.css");
 @import url("content/text.css");
+
+/* Animation styles */
 @import url("animations/gradient.css");
+@import url("animations/spotlight.css");
 @import url("animations/moonZoom.css");
 
 html {
@@ -19,67 +35,10 @@ html {
   text-align: justify;
   min-height: 100vh;
   background-size: 200% 200%;
-  /* background: url("/images/blog/layout/GIF/.gif"), repeat; */
   background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
-  /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   animation: gradient 5s infinite;
 }
 
-@keyframes spotlight {
-  0% {
-    opacity: 0.8;
-    background-position: 0% 50%;
-    background-size: 80%;
-  }
-  25% {
-    opacity: 0.65;
-    background-position: 50% 50%;
-    background-size: 114%;
-  }
-  50% {
-    opacity: 0.35;
-    background-position: 100% 50%;
-    background-size: 104%;
-  }
-  75% {
-    opacity: 0.79;
-    background-position: 50% 50%;
-    background-size: 92%;
-  }
-  100% {
-    opacity: 1;
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-}
-
-@keyframes backzoomer {
-  0% {
-    /* opacity: 0; */
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-  25% {
-    /* opacity: 0.5; */
-    background-position: 50% 50%;
-    background-size: 114%;
-  }
-  50% {
-    /* opacity: 0.6; */
-    background-position: 100% 50%;
-    background-size: 104%;
-  }
-  75% {
-    /* opacity: 0.79; */
-    background-position: 50% 50%;
-    background-size: 92%;
-  }
-  100% {
-    /* opacity: 1; */
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-}
 
 body {
   padding: 0;
@@ -87,13 +46,15 @@ body {
   max-width: 120ch;
   padding: 1rem;
   line-height: 1.28;
+  text-align: start;
 }
 
-/* */
+
 iframe html {
   margin-left: 100px;
   margin-right: auto;
 }
+
 
 /* height: 100vh;
   margin: 0;
@@ -103,6 +64,10 @@ iframe html {
 
 * {
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }
 
 .color-neon-green {
@@ -115,43 +80,6 @@ iframe html {
 
 .nosifer {
   font-family: Nosifer;
-}
-
-/* Headers */
-h1 {
-  margin: 0;
-  color: #52ff97;
-  font-family: "PsychofunRegular", cursive;
-  font-weight: 100;
-  font-size: 7rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
-}
-
-h2 {
-  color: #52ff97;
-  margin-top: 0;
-  font-size: 5rem;
-  font-family: DistantGalaxy, sans-serif;
-  font-weight: 100;
-}
-h3 {
-  color: #52ff97;
-  font-size: 2.5em;
-  font-family: DistantGalaxy, sans-serif;
-}
-
-h4 {
-  color: #52ff97;
-  font-size: 2.3em;
-  font-family: DistantGalaxy, sans-serif;
-}
-
-h5 {
-  color: #52ff97;
-  font-size: 2em;
-  font-family: DistantGalaxy, sans-serif;
 }
 
 a {
@@ -180,7 +108,8 @@ table thead {
 hr {
   border: none;
   margin-bottom: 2px;
-  height: 10px; /* Adjust as needed */
+  height: 10px;
+  /* Adjust as needed */
   background: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
 }
 
@@ -260,16 +189,19 @@ table tbody .author p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 96vh; /*or any other value that fits your needs */
+  height: 96vh;
+  /*or any other value that fits your needs */
 }
 
 @keyframes flubber {
   0% {
     border-radius: 0%;
   }
+
   50% {
     border-radius: 40%;
   }
+
   100% {
     border-radius: 0px;
   }
@@ -280,17 +212,20 @@ table tbody .author p {
     padding-left: 0px;
     padding-right: 0;
   }
+
   50% {
     padding-left: 100px;
     padding-right: 100%;
   }
+
   100% {
     border-radius: 0px;
   }
 }
 
 .welcome-header {
-  z-index: 100; /* or any other positive number */
+  z-index: 100;
+  /* or any other positive number */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,7 +234,8 @@ table tbody .author p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* or any other value that fits your needs */
+  height: 100%;
+  /* or any other value that fits your needs */
 }
 
 .welcome-text-island {
@@ -519,6 +455,7 @@ a:visited {
   padding-bottom: 56.25%;
   margin-bottom: 30px;
 }
+
 .youtube-video {
   position: absolute;
   top: 0;
@@ -526,6 +463,7 @@ a:visited {
   width: 100%;
   height: 100%;
 }
+
 /* End Youtube video responsive styles */
 
 .label {
