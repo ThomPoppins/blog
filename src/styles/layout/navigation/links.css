@@ -46,6 +46,7 @@
   text-transform: uppercase;
 }
 
+.nav-links a,
 .nav-links a:hover,
 .nav-links a:focus,
 .nav-links a:visited {
