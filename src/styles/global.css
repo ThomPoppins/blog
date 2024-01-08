@@ -34,16 +34,15 @@ html {
   font-family: DistantGalaxy, sans-serif;
   text-align: justify;
   min-height: 100vh;
-  background-size: 200% 200%;
   background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
-  animation: gradient 5s infinite;
+  animation: gradient 100s infinite;
 }
 
 
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 120ch;
+  max-width: 75ch;
   padding: 1rem;
   line-height: 1.28;
   text-align: start;
@@ -68,6 +67,17 @@ iframe html {
 
 .hidden {
   display: none;
+}
+
+.hidden-but-accessible-for-seo {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .color-neon-green {
@@ -342,16 +352,9 @@ section {
 }
 
 .section-island {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 80px;
-
   width: 100%;
-  text-align: center;
-
-  /* background: url('/images/blog/layout/GIF/glasslike-visual.gif') repeat; */
-  /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
-  /* animation: gradient 50s ease-in-out infinite; */
-  /* border-radius:3%; */
 }
 
 .section-island p {

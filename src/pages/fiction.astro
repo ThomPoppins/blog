@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ReleaseInformation from "../components/release/ReleaseInformation.astro";
+("../components/release/ReleaseInformation.astro");
+// import YoutuberDetails from "../components/blog/youtube/YoutuberDetails.astro";
+const pageTitle = "FICTION";
+---
+
+{/* ! TODO: alle embeds aflopen op juiste container etc */}
+<BaseLayout>
+  <div class="content-container">
+    <div class="section-island">
+      <h1 class="title">{pageTitle}</h1>
+
+      <!-- u m a m i title image -->
+      <div class="image">
+        <img
+          class="image"
+          src="https://umamimerch.com/wp-content/uploads/2021/01/UMAMI-2020-Design-Transparent.png"
+        />
+      </div>
+
+      <h2 class="hidden">u m a m i</h2>
+
+      <div class="youtube-player-container">
+        <iframe
+          class="youtube-video"
+          src="https://www.youtube.com/embed/videoseries?si=VYyGrW_ronGByudW&list=PL8KvmLSNS1wVrR-rCIiRmEaHQUxL778Ka"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

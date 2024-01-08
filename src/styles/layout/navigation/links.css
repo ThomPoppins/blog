@@ -2,7 +2,7 @@
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #18f506;
+  background-color: #6f00ff;
   display: none;
   margin: 0;
   display: flex;
@@ -16,6 +16,7 @@
   width: 100%;
   z-index: 1;
 }
+
 /* nav styles */
 
 .hamburger {
@@ -46,17 +47,19 @@
 }
 
 .nav-links a:hover,
-.nav-links a:focus {
+.nav-links a:focus,
+.nav-links a:visited {
   background-color: #ff9776;
+  color: #18f506;
 }
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    /* margin-left: 5em; */
     display: block;
     position: static;
     width: auto;
-    background-color: #18f506;
+    background-color: #6f00ff;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
