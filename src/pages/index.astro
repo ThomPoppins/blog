@@ -3,15 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ReleaseInformation from "../components/release/ReleaseInformation.astro";
 ("../components/release/ReleaseInformation.astro");
 // import YoutuberDetails from "../components/blog/youtube/YoutuberDetails.astro";
-const pageTitle = "uN-RADIo";
+const pageTitle = "Home";
 ---
 
 {/* ! TODO: alle embeds aflopen op juiste container etc */}
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <div class="content-container">
     <div class="section-island">
       <div class="static-text-container">
-        <h1 class="title"></h1>
+        <h2>TEASERS</h2>
       </div>
 
       <h3>
@@ -29,43 +29,6 @@ const pageTitle = "uN-RADIo";
         ></iframe>
       </div>
 
-      <h3>AcreCast (Acre Recordings)</h3>
-
-      <div class="podomatic-player-container">
-        <iframe
-          src="https://podomatic.com/embed/html5/episode/2611384"
-          height="208"
-          width="504"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrolling="no"
-          allowfullscreen></iframe>
-      </div>
-
-      <div class="podomatic-player-container">
-        <iframe
-          src="https://podomatic.com/embed/html5/episode/2660574"
-          height="208"
-          width="504"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrolling="no"
-          allowfullscreen></iframe>
-      </div>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1671924306&color=%2340403c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
       <h3>WTF playlist</h3>
 
       <div class="youtube-player-container">
@@ -78,182 +41,101 @@ const pageTitle = "uN-RADIo";
           allowfullscreen></iframe>
       </div>
 
-      <h3>Playlists</h3>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1738780644&color=%23715db4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1737833340&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1737792624&color=%23050b1d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1735655325&color=%23050b1d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
-      <h3>Low Entropy: Malfunction (praxis_digital 00101)</h3>
-
-      <div class="soundcloud-autoplay">
-        <div class="souncloud-player-container">
-          <iframe
-            width="100%"
-            height="450"
-            scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1268991736&color=%23ff995f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          ></iframe>
-        </div>
-      </div>
-
-      <!-- u m a m i title image -->
-      <div class="image">
-        <img
-          class="image"
-          src="https://umamimerch.com/wp-content/uploads/2021/01/UMAMI-2020-Design-Transparent.png"
-        />
-      </div>
-
-      <h2 class="hidden">u m a m i</h2>
+      <h2>HALLY LABS</h2>
 
       <div class="youtube-player-container">
         <iframe
           class="youtube-video"
-          src="https://www.youtube.com/embed/videoseries?si=VYyGrW_ronGByudW&list=PL8KvmLSNS1wVrR-rCIiRmEaHQUxL778Ka"
+          src="https://www.youtube-nocookie.com/embed/juW3NyoQ1mU?si=KA27H0tjbKMTQezK"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-    </div>
 
-    <h2>HALLY LABS</h2>
+      <div class="bandcamp-player-container">
+        <iframe
+          style="border: 0; width: 700px; height: 971px;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2634766154/size=large/bgcol=333333/linkcol=2ebd35/transparent=true/"
+          seamless
+          ><a href="https://halleylabs.com/album/fd04-another-versions">FD04
+          ANOTHER VERSIONS by HALLEY LABS</a></iframe
+        >
+      </div>
 
-    <div class="youtube-player-container">
-      <iframe
-        class="youtube-video"
-        src="https://www.youtube-nocookie.com/embed/juW3NyoQ1mU?si=KA27H0tjbKMTQezK"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
+      <h3>msx' live music</h3>
 
-    <div class="bandcamp-player-container">
-      <iframe
-        style="border: 0; width: 700px; height: 971px;"
-        src="https://bandcamp.com/EmbeddedPlayer/album=2634766154/size=large/bgcol=333333/linkcol=2ebd35/transparent=true/"
-        seamless
-        ><a href="https://halleylabs.com/album/fd04-another-versions">FD04
-        ANOTHER VERSIONS by HALLEY LABS</a></iframe
-      >
-    </div>
+      <div class="youtube-player-container">
+        <iframe
+          class="youtube-video"
+          src="https://www.youtube.com/embed/videoseries?si=nvq9eL-r1_VFBWan&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
 
-    <h3>msx' live music</h3>
+      <h3>msx - saunamaija</h3>
 
-    <div class="youtube-player-container">
-      <iframe
-        class="youtube-video"
-        src="https://www.youtube.com/embed/videoseries?si=nvq9eL-r1_VFBWan&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
+      <div class="youtube-player-container">
+        <iframe
+          class="youtube-video"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/5bjVmbaPsQg?si=cmDXHGr4rd_iwVca"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
 
-    <h3>msx - saunamaija</h3>
+      <h3>msx - "warehouse on the cliffside" (MIDI, Roland SC-55)</h3>
 
-    <div class="youtube-player-container">
-      <iframe
-        class="youtube-video"
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/5bjVmbaPsQg?si=cmDXHGr4rd_iwVca"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
+      div class="youtube-player-container">
 
-    <h3>msx - "warehouse on the cliffside" (MIDI, Roland SC-55)</h3>
+      <h3>msx - live music shit</h3>
 
-    div class="youtube-player-container">
+      <div class="youtube-player-container">
+        <iframe
+          class="youtube-video"
+          src="https://www.youtube-nocookie.com/embed/videoseries?si=JtYfWbPdscaI4Znt&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
 
-    <h3>msx - live music shit</h3>
+      <h2>greenhouse - arc,regn</h2>
 
-    <div class="youtube-player-container">
-      <iframe
-        class="youtube-video"
-        src="https://www.youtube-nocookie.com/embed/videoseries?si=JtYfWbPdscaI4Znt&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
+      <ReleaseInformation
+        releaseDate="30 Sept 2023"
+        catalogNumber=""
+        country="Canada"
+        genre=""
+      />
 
-    <h2>greenhouse - arc,regn</h2>
+      <div class="bandcamp-player-container">
+        <iframe
+          style="border: 0; width: 700px; height: 1136px;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3515713455/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
+          seamless
+          ><a href="https://halleylabs.com/album/arc-regn">arc,regn by
+          greenhouse</a></iframe
+        >
+      </div>
 
-    <ReleaseInformation
-      releaseDate="30 Sept 2023"
-      catalogNumber=""
-      country="Canada"
-      genre=""
-    />
+      <h2>Electric Specter 電妖怪 - Electric</h2>
 
-    <div class="bandcamp-player-container">
-      <iframe
-        style="border: 0; width: 700px; height: 1136px;"
-        src="https://bandcamp.com/EmbeddedPlayer/album=3515713455/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
-        seamless
-        ><a href="https://halleylabs.com/album/arc-regn">arc,regn by
-        greenhouse</a></iframe
-      >
-    </div>
-
-    <h2>Electric Specter 電妖怪 - Electric</h2>
-
-    <div class="bandcamp-player-container">
-      <iframe
-        style="border: 0; width: 700px; height: 1260px;"
-        src="https://bandcamp.com/EmbeddedPlayer/album=999290086/size=large/bgcol=ffffff/linkcol=0687f5/package=1172855805/transparent=true/"
-        seamless
-        ><a
-        href="https://geometriclullaby.bandcamp.com/album/ocean-electric">Ocean
-        Electric by Electric Specter 電妖怪</a></iframe
-      >
+      <div class="bandcamp-player-container">
+        <iframe
+          style="border: 0; width: 700px; height: 1260px;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=999290086/size=large/bgcol=ffffff/linkcol=0687f5/package=1172855805/transparent=true/"
+          seamless
+          ><a
+          href="https://geometriclullaby.bandcamp.com/album/ocean-electric">Ocean
+          Electric by Electric Specter 電妖怪</a></iframe
+        >
+      </div>
     </div>
   </div>
 </BaseLayout>
