@@ -15,9 +15,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.0",
-    "@astrojs/react": "^3.0.7",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.17",
+    "@astrojs/react": "^3.0.9",
     "@vercel/analytics": "^1.1.1",
     "@web3-storage/w3up-client": "^11.2.1",
     "astro": "^4.0.8",

@@ -27,28 +27,26 @@ const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
 />
 */
 }
-
 <div
   class="release-information"
   style={{ display: "flex", alignItems: "center" }}
 >
   {
     imgUrl && (
-      <div class="release-information-image">
+      <div class="release-information-image" style={{ flex: 1 }}>
         <img
           src={imgUrl}
           alt={imgAlt}
           style={{
-            marginRight: "20px",
-            maxWidth: "200px",
-            maxHeight: "200px",
+            maxWidth: "100%",
+            maxHeight: "100%",
           }}
         />
       </div>
     )
   }
 
-  <div>
+  <div style={{ flex: 1, marginLeft: "10px" }}>
     {releaseDate ? <p>Date: {releaseDate}</p> : ""}
     {label ? <p>Label: {label}</p> : ""}
     {catalogNumber ? <p>Catalog Number:{catalogNumber}</p> : ""}
