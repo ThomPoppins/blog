@@ -6,4 +6,6 @@
   overflow: hidden;
 }
 
-
+.bandcamp-album {
+  width: 100% !important;
+}

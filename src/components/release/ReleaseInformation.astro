@@ -1,5 +1,5 @@
 ---
-const { releaseDate, catalogNumber, label, country, genre, imgUrl, imgAlt } =
+const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
   Astro.props;
 ---
 
@@ -17,14 +17,14 @@ const { releaseDate, catalogNumber, label, country, genre, imgUrl, imgAlt } =
   />
 
   <ReleaseInformation
-    releaseDate="YYYY-MM-DD"
-    label=""
-    catalogNumber=""
-    country=""
-    genre="
-    imgUrl=""
-    imgAlt=""
-  />
+  releaseDate="YYYY-MM-DD"
+  label=""
+  catalogNumber=""
+  country=""
+  genre=""
+  imgUrl=""
+  imgAlt=""
+/>
 */
 }
 
@@ -47,10 +47,10 @@ const { releaseDate, catalogNumber, label, country, genre, imgUrl, imgAlt } =
   }
 
   <div>
-    <p>Date: {releaseDate}</p>
-    <p>Label: {label}</p>
+    {releaseDate ? <p>Date: {releaseDate}</p> : ""}
+    {label ? <p>Label: {label}</p> : ""}
     {catalogNumber ? <p>Catalog Number:{catalogNumber}</p> : ""}
-    <p>Country: {country}</p>
-    <p>Genre: {genre}</p>
+    {country ? <p>Country: {country}</p> : ""}
+    {genre ? <p>Genre: {genre}</p> : ""}
   </div>
 </div>
