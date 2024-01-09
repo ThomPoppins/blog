@@ -23,6 +23,7 @@
 
 /* Animation styles */
 @import url("animations/gradient.css");
+@import url("animations/rainbowHeader.css");
 @import url("animations/spotlight.css");
 @import url("animations/moonZoom.css");
 
@@ -46,7 +47,7 @@ html {
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 75ch;
+  width: 700px;
   padding: 1rem;
   line-height: 1.28;
   text-align: start;
