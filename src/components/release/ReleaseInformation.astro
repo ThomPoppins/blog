@@ -34,15 +34,17 @@ const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
 >
   {
     imgUrl && (
-      <img
-        src={imgUrl}
-        alt={imgAlt}
-        style={{
-          marginRight: "20px",
-          maxWidth: "200px",
-          maxHeight: "200px",
-        }}
-      />
+      <div class="release-information-image">
+        <img
+          src={imgUrl}
+          alt={imgAlt}
+          style={{
+            marginRight: "20px",
+            maxWidth: "200px",
+            maxHeight: "200px",
+          }}
+        />
+      </div>
     )
   }
 

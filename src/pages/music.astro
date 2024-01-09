@@ -9,7 +9,7 @@ const pageTitle = "🤪 MUSIC 🤪";
 {/* ! TODO: alle embeds aflopen op juiste container etc */}
 <BaseLayout pageTitle={pageTitle}>
   <div class="content-container">
-    <div class="section-island">
+    <div class="main-content">
       <h2>Soundcloud collections</h2>
 
       <h3>Livesets</h3>
@@ -101,705 +101,783 @@ const pageTitle = "🤪 MUSIC 🤪";
         ></iframe>
       </div>
 
+
+
       <h2>Zodiak Commune</h2>
 
-      <h3>Akkaelle - Solid Transmission</h3>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h4>Promo</h4>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style={{ border: "0", width: "1080px", height: "728px" }}
-          src="https://bandcamp.com/VideoEmbed?track=3732141119&bgcol=333333&linkcol=ffffff"
-          allowfullscreen={true}
-          seamless={true}></iframe>
-      </div>
-
-      <h4>Vinyl</h4>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 971px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3768648171/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
-          seamless
-          allowfullscreen={true}
-          seamless={true}></iframe>
-      </div>
-
-      <h3>Paul Renard &amp; Dima Gastrolër - Acid Sessions vol.1</h3>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h4>PROMO'S</h4>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style={{ border: "0", width: "1080px", height: "728px" }}
-          src="https://bandcamp.com/VideoEmbed?track=96329465&bgcol=ffffff&linkcol=de270f"
-          allowfullscreen={true}
-          seamless={true}></iframe>
-      </div>
-      <div class="bandcamp-player-container">
-        <iframe
-          style={{ border: "0", width: "1080px", height: "728px" }}
-          src="https://bandcamp.com/VideoEmbed?track=282686685&bgcol=ffffff&linkcol=de270f"
-          allowfullscreen={true}
-          seamless={true}></iframe>
-      </div>
-
-      <h4>Vinyl</h4>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 1128px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2729703531/size=large/bgcol=ffffff/linkcol=de270f/package=3302166008/transparent=true/"
-          seamless
-          ><a
-          href="https://zodiakcommunerecords.bandcamp.com/album/zc033-acid-sessions-vol-1">ZC033
-          - Acid Sessions vol.1 by Paul Renard &amp; Dima Gastrolër</a></iframe
-        >
-      </div>
-
-      <h3>Acidulant - PA5Ti221 EP</h3>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 1062px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3786908161/size=large/bgcol=ffffff/linkcol=63b2cc/package=1696176802/transparent=true/"
-          seamless
-          ><a
-          href="https://zodiakcommunerecords.bandcamp.com/album/zc028-pa5ti221-ep">ZC028
-          - PA5Ti221 EP by Acidulant</a></iframe
-        >
-      </div>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h3>Acidevice - White Cyclus VI EP</h3>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 1095px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3242034399/size=large/bgcol=ffffff/linkcol=333333/package=2369098590/transparent=true/"
-          seamless
-          ><a
-          href="https://zodiakcommunerecords.bandcamp.com/album/zc-kore003-white-cyclus-vi-ep">ZC-KORE003
-          - White Cyclus VI EP by Acidevice</a></iframe
-        >
-      </div>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h3>Ounts & Lox - - Mist Of Souls</h3>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 1029px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3055901844/size=large/bgcol=ffffff/linkcol=0687f5/package=3672715865/transparent=true/"
-          seamless
-          ><a
-          href="https://zodiakcommunerecords.bandcamp.com/album/zc-trip002-mist-of-souls">ZC-TRIP002
-          - Mist Of Souls by Ounts, Lox</a></iframe
-        >
-      </div>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h3>V.A. - The Electro Guilde</h3>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 1095px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=759708579/size=large/bgcol=ffffff/linkcol=0687f5/package=1375150101/transparent=true/"
-          seamless
-          ><a
-          href="https://zodiakcommunerecords.bandcamp.com/album/zc-elec008-the-electro-guilde">ZC​-​ELEC008
-          - The Electro Guilde by Dust Devices</a></iframe
-        >
-      </div>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h2>Ohm Recordings</h2>
-
-      <h3>Art imitati¤n - ILegalizedIt</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/x3Mu3RSk9G0?si=nIidKCRG35q3i13t"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h3>Submerged - Do You Even Know What Your Angels Look Like?</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/oY152cT6hcI?si=9WQTFSkV_5SjFnhi"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <!--<h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <!-- <h3></h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-         
-
-
-          
-      </div> -->
-
-      <h3>Hack Sabbath - The Wizhard (WHR001)</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/B-sfzmX30hA?si=pXnsAqzHNFhwCbqZ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h2>Jaquarius</h2>
-
-      <h3>Jaquarius - The New Acicular</h3>
-
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1705832985&color=%23b7bb3b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
-
-      <h2>HALLY LABS</h2>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/juW3NyoQ1mU?si=KA27H0tjbKMTQezK"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h3>V.A. (HALLEY LABS) - FD04 ANOTHER VERSIONS</h3>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          style="border: 0; width: 700px; height: 971px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2634766154/size=large/bgcol=333333/linkcol=2ebd35/transparent=true/"
-          seamless
-          ><a href="https://halleylabs.com/album/fd04-another-versions">FD04
-          ANOTHER VERSIONS by HALLEY LABS</a></iframe
-        >
-      </div>
-
-      <ReleaseInformation
-        releaseDate="YYYY-MM-DD"
-        label=""
-        catalogNumber=""
-        country=""
-        genre=""
-        imgUrl=""
-        imgAlt=""
-      />
-
-      <h3>msx' - live music shit (playlist!)</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube.com/embed/videoseries?si=nvq9eL-r1_VFBWan&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h3>msx - saunamaija</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/5bjVmbaPsQg?si=cmDXHGr4rd_iwVca"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h3>msx - live music shit</h3>
-
-      <div class="youtube-player-container">
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube-nocookie.com/embed/videoseries?si=JtYfWbPdscaI4Znt&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <h2>greenhouse - arc,regn</h2>
-
-      <div class="bandcamp-player-container">
-        <iframe
-          class="bandcamp-album"
-          style="border: 0; width: 700px; height: 1136px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3515713455/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
-          seamless
-          ><a href="https://halleylabs.com/album/arc-regn">arc,regn by
-          greenhouse</a></iframe
-        >
-      </div>
+      <h3>V.A. - 303 Fifth Pattern</h3>
 
       <ReleaseInformation
         releaseDate=""
-        label="HALLEY LABS"
-        catalogNumber=""
-        country="Canada, 'Hamilton, Ontario'"
-        genre="IDM, acid, ambient, braindance, glitch, experimental"
-        imgUrl="https://f4.bcbits.com/img/a2514323599_10.jpg"
-        imgAlt="greenhouse - arc,regn album cover"
+        label="Zodiak Commune Records"
+        catalogNumber="ZC​-​303005"
+        country="Eindhoven, Netherlands"
+        genre="acid, techno"
+        imgUrl="https://f4.bcbits.com/img/0031609409_10.jpg"
+        imgAlt="303 Fifth Pattern Vinyl"
       />
-
-      <h2>Geometric Lullaby</h2>
-
-      <h3>Electric Specter 電妖怪 - Electric</h3>
 
       <div class="bandcamp-player-container">
         <iframe
           style="border: 0; width: 700px; height: 1260px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=999290086/size=large/bgcol=ffffff/linkcol=0687f5/package=1172855805/transparent=true/"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3311164152/size=large/bgcol=ffffff/linkcol=2ebd35/package=1502347793/transparent=true/"
           seamless
           ><a
-          href="https://geometriclullaby.bandcamp.com/album/ocean-electric">Ocean
-          Electric by Electric Specter 電妖怪</a></iframe
+          href="https://zodiakcommunerecords.bandcamp.com/album/zc-303005-303-fifth-pattern">ZC​-​303005
+          - 303 Fifth Pattern by Zodiak Commune Records</a></iframe
         >
       </div>
+    </div>
+    <h3>SOUR - Time Paradox LP (25 Anniversary Edition)</h3>
 
-      <h2>Acre Recordings</h2>
+    <ReleaseInformation
+      releaseDate="2023-09-29"
+      label="Zodiak Commune Records"
+      catalogNumber="ZC032LP-EF"
+      country="Eindhoven, Netherlands"
+      genre="acid, techno"
+      imgUrl="https://f4.bcbits.com/img/0033683769_10.jpg"
+      imgAlt="SOUR - Time Paradox LP Vinyl"
+    />
 
-      <h3>Atomhead - Timeblind</h3>
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1260px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=177100455/size=large/bgcol=333333/linkcol=e32c14/package=4090157351/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc032lp-time-paradox-lp-25-anniversary-edition">ZC032LP
+        - Time Paradox LP - 25 Anniversary Edition by SOUR</a></iframe
+      >
+    </div>
 
-      <div class="bandcamp-player-container">
+    <hr />
+
+    <h3>Akkaelle - Solid Transmission</h3>
+
+    <h4>Promo</h4>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style={{ border: "0", width: "1080px", height: "728px" }}
+        src="https://bandcamp.com/VideoEmbed?track=3732141119&bgcol=333333&linkcol=ffffff"
+        allowfullscreen={true}
+        seamless={true}></iframe>
+    </div>
+
+    <h4>Vinyl</h4>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 971px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3768648171/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
+        seamless
+        allowfullscreen={true}
+        seamless={true}></iframe>
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>Paul Renard &amp; Dima Gastrolër - Acid Sessions vol.1</h3>
+
+    <h4>PROMO'S</h4>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style={{ border: "0", width: "1080px", height: "728px" }}
+        src="https://bandcamp.com/VideoEmbed?track=96329465&bgcol=ffffff&linkcol=de270f"
+        allowfullscreen={true}
+        seamless={true}></iframe>
+    </div>
+    <div class="bandcamp-player-container">
+      <iframe
+        style={{ border: "0", width: "1080px", height: "728px" }}
+        src="https://bandcamp.com/VideoEmbed?track=282686685&bgcol=ffffff&linkcol=de270f"
+        allowfullscreen={true}
+        seamless={true}></iframe>
+    </div>
+
+    <h4>Vinyl</h4>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1128px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2729703531/size=large/bgcol=ffffff/linkcol=de270f/package=3302166008/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc033-acid-sessions-vol-1">ZC033
+        - Acid Sessions vol.1 by Paul Renard &amp; Dima Gastrolër</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>Acidulant - PA5Ti221 EP</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1062px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3786908161/size=large/bgcol=ffffff/linkcol=63b2cc/package=1696176802/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc028-pa5ti221-ep">ZC028
+        - PA5Ti221 EP by Acidulant</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>Acidevice - White Cyclus VI EP</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1095px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3242034399/size=large/bgcol=ffffff/linkcol=333333/package=2369098590/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc-kore003-white-cyclus-vi-ep">ZC-KORE003
+        - White Cyclus VI EP by Acidevice</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>Ounts & Lox - - Mist Of Souls</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1029px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3055901844/size=large/bgcol=ffffff/linkcol=0687f5/package=3672715865/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc-trip002-mist-of-souls">ZC-TRIP002
+        - Mist Of Souls by Ounts, Lox</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>V.A. - The Electro Guilde</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1095px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=759708579/size=large/bgcol=ffffff/linkcol=0687f5/package=1375150101/transparent=true/"
+        seamless
+        ><a
+        href="https://zodiakcommunerecords.bandcamp.com/album/zc-elec008-the-electro-guilde">ZC​-​ELEC008
+        - The Electro Guilde by Dust Devices</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label="Zodiak Commune Records"
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h2>New Flesh, RAVE OR DIE & Flesh Or Die</h2>
+
+    <h3>Serge Geyzel - Airplanes In My Dreams EP (incl. Umwelt rmx)</h3>
+
+    <ReleaseInformation
+      releaseDate="October 22, 2023"
+      label="New Flesh"
+      catalogNumber="NF29"
+      country="	France"
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1062px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2557650213/size=large/bgcol=ffffff/linkcol=0687f5/package=1845107721/transparent=true/"
+        seamless
+        ><a
+        href="https://newfleshrecords.bandcamp.com/album/airplanes-in-my-dreams-ep-incl-umwelt-rmx-nf29">Airplanes
+        In My Dreams EP (incl. Umwelt rmx) - NF29 by Serge Geyzel</a></iframe
+      >
+    </div>
+
+    <h2>SolarOneMusic</h2>
+
+    <div class="bandcamp-player-container">
+      <iframe style="border: 0; width: 700px; height: 1095px;" src="https://bandcamp.com/EmbeddedPlayer/album=1615590175/size=large/bgcol=333333/linkcol=ffffff/package=1749757566/transparent=true/" seamless><a href="https://solaronemusic.bandcamp.com/album/185">185 by Gesloten Cirkel</a></iframe>
+    </div>
+
+    <h2>Ohm Recordings</h2>
+
+    <h3>Art imitati¤n - ILegalizedIt</h3>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/x3Mu3RSk9G0?si=nIidKCRG35q3i13t"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <h3>Submerged - Do You Even Know What Your Angels Look Like?</h3>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/oY152cT6hcI?si=9WQTFSkV_5SjFnhi"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <!--<h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          style="border: 0; width: 700px; height: 1004px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2344163634/size=large/bgcol=333333/linkcol=e99708/transparent=true/"
-          seamless
-          ><a
-          href="https://acrerecordings.bandcamp.com/album/timeblind">Timeblind
-          by Atomhead</a></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Laconic Impression - Epidemy</h3>
 
-      <div class="bandcamp-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          style="border: 0; width: 700px; height: 1136px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3321547476/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
-          seamless
-          ><a href="https://acrerecordings.bandcamp.com/album/epidemy">Epidemy
-          by Laconic Impression</a></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Méconium - The Synaptic Vesicle Routine</h3>
 
-      <div class="bandcamp-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          style="border: 0; width: 700px; height: 905px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=4132194786/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
-          seamless
-          ><a
-          href="https://acrerecordings.bandcamp.com/album/the-synaptic-vesicle-routine">The
-          Synaptic Vesicle Routine by Méconium</a></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>C Mantle - Anatomically Correct</h3>
 
-      <div class="bandcamp-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          style="border: 0; width: 700px; height: 1227px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=532389344/size=large/bgcol=ffffff/linkcol=f171a2/package=2384018666/transparent=true/"
-          seamless
-          ><a
-          href="https://acrerecordings.bandcamp.com/album/anatomically-correct">Anatomically
-          Correct by C Mantle</a></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Opine Ko$insky - M.E.</h3>
 
-      <div class="bandcamp-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          style="border: 0; width: 700px; height: 971px;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2567872045/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
-          seamless
-          ><a href="https://acrerecordings.bandcamp.com/album/m-e">M.E. by Opine
-          Ko$insky</a></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>AcreCast (Acre Recordings)</h3>
 
-      <div class="podomatic-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          src="https://podomatic.com/embed/html5/episode/2611384"
-          height="208"
-          width="504"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrolling="no"
-          allowfullscreen></iframe>
-      </div>
+          class="youtube-video"
+         
 
-      <div class="podomatic-player-container">
+
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          src="https://podomatic.com/embed/html5/episode/2660574"
-          height="208"
-          width="504"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrolling="no"
-          allowfullscreen></iframe>
-      </div>
+          class="youtube-video"
+         
 
-      <h2>Low Entropy</h2>
 
-      <h3>Low Entropy - Tribute Mix To Underground Futuristic Organisation</h3>
+          
+      </div> -->
 
-      <div class="hearthis-player-container">
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          scrolling="no"
-          id="hearthis_at_track_6927323"
-          width="100%"
-          height="150"
-          src="https://app.hearthis.at/embed/6927323/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-          frameborder="0"
-          allowtransparency
-          allow="autoplay"
-          ><p>Listen to <a
-          href="https://hearthis.at/lowentropy/low-entropy-tribute-mix-to-underground-futuristic-organisation/"
-          target="_blank">Tribute Mix To Underground Futuristic Organisation</a>
-          <span>by</span><a href="https://hearthis.at/lowentropy/"
-          target="_blank" >Low Entropy</a> <span>on</span> <a
-          href="https://hearthis.at/" target="_blank">hearthis.at</a></p></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Low Entropy at Fuckparade Warmup Party - Tresor.Berlin 04.07.2003</h3>
 
-      <div class="hearthis-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          scrolling="no"
-          id="hearthis_at_track_76552"
-          width="100%"
-          height="150"
-          src="https://app.hearthis.at/embed/76552/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-          frameborder="0"
-          allowtransparency
-          allow="autoplay"
-          ><p>Listen to <a
-          href="https://hearthis.at/lowentropy/low-entropy-fuckparade-warmup-party-2003/"
-          target="_blank">Low Entropy @ Fuckparade Warmup Party - Tresor.Berlin
-          04.07.2003</a> <span>by</span><a
-          href="https://hearthis.at/lowentropy/" target="_blank" >Low
-          Entropy</a> <span>on</span> <a href="https://hearthis.at/"
-          target="_blank">hearthis.at</a></p></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Low Entropy - Kool Acidcore Test</h3>
 
-      <div class="hearthis-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          scrolling="no"
-          id="hearthis_at_track_1162479"
-          width="100%"
-          height="150"
-          src="https://app.hearthis.at/embed/1162479/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-          frameborder="0"
-          allowtransparency
-          allow="autoplay"
-          ><p>Listen to <a
-          href="https://hearthis.at/lowentropy/low-entropy-kool-acidcore-test/"
-          target="_blank"> Kool Acidcore Test</a> <span>by</span><a
-          href="https://hearthis.at/lowentropy/" target="_blank" >Low
-          Entropy</a> <span>on</span> <a href="https://hearthis.at/"
-          target="_blank">hearthis.at</a></p></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Low Entropy - Acidcore mix 4</h3>
 
-      <div class="hearthis-player-container">
+          
+      </div> -->
+
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          scrolling="no"
-          id="hearthis_at_track_174015"
-          width="100%"
-          height="150"
-          src="https://app.hearthis.at/embed/174015/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-          frameborder="0"
-          allowtransparency
-          allow="autoplay"
-          ><p>Listen to <a
-          href="https://hearthis.at/lowentropy/low-entropy-acidcore-mix-4/"
-          target="_blank">Acidcore Mix 4</a> <span>by</span><a
-          href="https://hearthis.at/lowentropy/" target="_blank" >Low
-          Entropy</a> <span>on</span> <a href="https://hearthis.at/"
-          target="_blank">hearthis.at</a></p></iframe
-        >
-      </div>
+          class="youtube-video"
+         
 
-      <h2>Deadnoise</h2>
 
-      <h3>Deadnoise - BELLIGERENCE PART 1: TECHNO</h3>
+          
+      </div> -->
 
-      <div class="soundcloud-player-container">
+    <!-- <h3></h3>
+
+      <div class="youtube-player-container">
         <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1619628717&color=%237c6034&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
+          class="youtube-video"
+         
 
-      <h3>Deadnoise - BELLIGERENCE PART 2: HARDCORE</h3>
 
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1671924306&color=%2340403c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
+          
+      </div> -->
 
-      <h2>Acid releases</h2>
+    <h3>Hack Sabbath - The Wizhard (WHR001)</h3>
 
-      <h3>Cthulhu - Gaap</h3>
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/B-sfzmX30hA?si=pXnsAqzHNFhwCbqZ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
 
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1705062102&color=%237c6034&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
+    <h2>Jaquarius</h2>
 
-      <h2>Experimental releases</h2>
+    <h3>Jaquarius - The New Acicular</h3>
 
-      <h3>KASCHADE - Schlockmeister's Alligator Soup (Kim the Vampire) 2021</h3>
+    <div class="soundcloud-player-container">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1705832985&color=%23b7bb3b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+    </div>
 
-      <div class="soundcloud-player-container">
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055659804&color=%23b7bb3b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-      </div>
+    <h2>HALLY LABS</h2>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/juW3NyoQ1mU?si=KA27H0tjbKMTQezK"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <h3>V.A. (HALLEY LABS) - FD04 ANOTHER VERSIONS</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 971px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2634766154/size=large/bgcol=333333/linkcol=2ebd35/transparent=true/"
+        seamless
+        ><a href="https://halleylabs.com/album/fd04-another-versions">FD04
+        ANOTHER VERSIONS by HALLEY LABS</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate="YYYY-MM-DD"
+      label=""
+      catalogNumber=""
+      country=""
+      genre=""
+      imgUrl=""
+      imgAlt=""
+    />
+
+    <h3>msx' - live music shit (playlist!)</h3>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube.com/embed/videoseries?si=nvq9eL-r1_VFBWan&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <h3>msx - saunamaija</h3>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/5bjVmbaPsQg?si=cmDXHGr4rd_iwVca"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <h3>msx - live music shit</h3>
+
+    <div class="youtube-player-container">
+      <iframe
+        class="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/videoseries?si=JtYfWbPdscaI4Znt&list=PLyu9mj8BM1HLadwJuk0tUFrWUovVJCivF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <h2>greenhouse - arc,regn</h2>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        class="bandcamp-album"
+        style="border: 0; width: 700px; height: 1136px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3515713455/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
+        seamless
+        ><a href="https://halleylabs.com/album/arc-regn">arc,regn by
+        greenhouse</a></iframe
+      >
+    </div>
+
+    <ReleaseInformation
+      releaseDate=""
+      label="HALLEY LABS"
+      catalogNumber=""
+      country="Canada, 'Hamilton, Ontario'"
+      genre="IDM, acid, ambient, braindance, glitch, experimental"
+      imgUrl="https://f4.bcbits.com/img/a2514323599_10.jpg"
+      imgAlt="greenhouse - arc,regn album cover"
+    />
+
+    <h2>Geometric Lullaby</h2>
+
+    <h3>Electric Specter 電妖怪 - Electric</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1260px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=999290086/size=large/bgcol=ffffff/linkcol=0687f5/package=1172855805/transparent=true/"
+        seamless
+        ><a
+        href="https://geometriclullaby.bandcamp.com/album/ocean-electric">Ocean
+        Electric by Electric Specter 電妖怪</a></iframe
+      >
+    </div>
+
+    <h2>Acre Recordings</h2>
+
+    <h3>Atomhead - Timeblind</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1004px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2344163634/size=large/bgcol=333333/linkcol=e99708/transparent=true/"
+        seamless
+        ><a href="https://acrerecordings.bandcamp.com/album/timeblind">Timeblind
+        by Atomhead</a></iframe
+      >
+    </div>
+
+    <h3>Laconic Impression - Epidemy</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1136px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3321547476/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+        seamless
+        ><a href="https://acrerecordings.bandcamp.com/album/epidemy">Epidemy by
+        Laconic Impression</a></iframe
+      >
+    </div>
+
+    <h3>Méconium - The Synaptic Vesicle Routine</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 905px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=4132194786/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+        seamless
+        ><a
+        href="https://acrerecordings.bandcamp.com/album/the-synaptic-vesicle-routine">The
+        Synaptic Vesicle Routine by Méconium</a></iframe
+      >
+    </div>
+
+    <h3>C Mantle - Anatomically Correct</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 1227px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=532389344/size=large/bgcol=ffffff/linkcol=f171a2/package=2384018666/transparent=true/"
+        seamless
+        ><a
+        href="https://acrerecordings.bandcamp.com/album/anatomically-correct">Anatomically
+        Correct by C Mantle</a></iframe
+      >
+    </div>
+
+    <h3>Opine Ko$insky - M.E.</h3>
+
+    <div class="bandcamp-player-container">
+      <iframe
+        style="border: 0; width: 700px; height: 971px;"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2567872045/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
+        seamless
+        ><a href="https://acrerecordings.bandcamp.com/album/m-e">M.E. by Opine
+        Ko$insky</a></iframe
+      >
+    </div>
+
+    <h3>AcreCast (Acre Recordings)</h3>
+
+    <div class="podomatic-player-container">
+      <iframe
+        src="https://podomatic.com/embed/html5/episode/2611384"
+        height="208"
+        width="504"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="podomatic-player-container">
+      <iframe
+        src="https://podomatic.com/embed/html5/episode/2660574"
+        height="208"
+        width="504"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+    </div>
+
+    <h2>Low Entropy</h2>
+
+    <h3>Low Entropy - Tribute Mix To Underground Futuristic Organisation</h3>
+
+    <div class="hearthis-player-container">
+      <iframe
+        scrolling="no"
+        id="hearthis_at_track_6927323"
+        width="100%"
+        height="150"
+        src="https://app.hearthis.at/embed/6927323/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+        frameborder="0"
+        allowtransparency
+        allow="autoplay"
+        ><p>Listen to <a
+        href="https://hearthis.at/lowentropy/low-entropy-tribute-mix-to-underground-futuristic-organisation/"
+        target="_blank">Tribute Mix To Underground Futuristic Organisation</a>
+        <span>by</span><a href="https://hearthis.at/lowentropy/" target="_blank"
+        >Low Entropy</a> <span>on</span> <a href="https://hearthis.at/"
+        target="_blank">hearthis.at</a></p></iframe
+      >
+    </div>
+
+    <h3>Low Entropy at Fuckparade Warmup Party - Tresor.Berlin 04.07.2003</h3>
+
+    <div class="hearthis-player-container">
+      <iframe
+        scrolling="no"
+        id="hearthis_at_track_76552"
+        width="100%"
+        height="150"
+        src="https://app.hearthis.at/embed/76552/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+        frameborder="0"
+        allowtransparency
+        allow="autoplay"
+        ><p>Listen to <a
+        href="https://hearthis.at/lowentropy/low-entropy-fuckparade-warmup-party-2003/"
+        target="_blank">Low Entropy @ Fuckparade Warmup Party - Tresor.Berlin
+        04.07.2003</a> <span>by</span><a href="https://hearthis.at/lowentropy/"
+        target="_blank" >Low Entropy</a> <span>on</span> <a
+        href="https://hearthis.at/" target="_blank">hearthis.at</a></p></iframe
+      >
+    </div>
+
+    <h3>Low Entropy - Kool Acidcore Test</h3>
+
+    <div class="hearthis-player-container">
+      <iframe
+        scrolling="no"
+        id="hearthis_at_track_1162479"
+        width="100%"
+        height="150"
+        src="https://app.hearthis.at/embed/1162479/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+        frameborder="0"
+        allowtransparency
+        allow="autoplay"
+        ><p>Listen to <a
+        href="https://hearthis.at/lowentropy/low-entropy-kool-acidcore-test/"
+        target="_blank"> Kool Acidcore Test</a> <span>by</span><a
+        href="https://hearthis.at/lowentropy/" target="_blank" >Low Entropy</a>
+        <span>on</span> <a href="https://hearthis.at/"
+        target="_blank">hearthis.at</a></p></iframe
+      >
+    </div>
+
+    <h3>Low Entropy - Acidcore mix 4</h3>
+
+    <div class="hearthis-player-container">
+      <iframe
+        scrolling="no"
+        id="hearthis_at_track_174015"
+        width="100%"
+        height="150"
+        src="https://app.hearthis.at/embed/174015/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+        frameborder="0"
+        allowtransparency
+        allow="autoplay"
+        ><p>Listen to <a
+        href="https://hearthis.at/lowentropy/low-entropy-acidcore-mix-4/"
+        target="_blank">Acidcore Mix 4</a> <span>by</span><a
+        href="https://hearthis.at/lowentropy/" target="_blank" >Low Entropy</a>
+        <span>on</span> <a href="https://hearthis.at/"
+        target="_blank">hearthis.at</a></p></iframe
+      >
+    </div>
+
+    <h2>Deadnoise</h2>
+
+    <h3>Deadnoise - BELLIGERENCE PART 1: TECHNO</h3>
+
+    <div class="soundcloud-player-container">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1619628717&color=%237c6034&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+    </div>
+
+    <h3>Deadnoise - BELLIGERENCE PART 2: HARDCORE</h3>
+
+    <div class="soundcloud-player-container">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1671924306&color=%2340403c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+    </div>
+
+    <h2>Acid releases</h2>
+
+    <h3>Cthulhu - Gaap</h3>
+
+    <div class="soundcloud-player-container">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1705062102&color=%237c6034&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+    </div>
+
+    <h2>Experimental releases</h2>
+
+    <h3>KASCHADE - Schlockmeister's Alligator Soup (Kim the Vampire) 2021</h3>
+
+    <div class="soundcloud-player-container">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055659804&color=%23b7bb3b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
     </div>
   </div>
 </BaseLayout>

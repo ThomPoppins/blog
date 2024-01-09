@@ -174,6 +174,13 @@ table tbody .author p {
 
 .release-information {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.release-information-image {
+  width: 50%;
+  margin-bottom: 30px;
 }
 
 .main-header-island {
@@ -356,11 +363,12 @@ section {
   color: #4b08d2;
 }
 
-.section-island {
+.main-content {
   width: 100%;
+  margin: 0 auto;
 }
 
-.section-island p {
+.main-content p {
   font-size: 1.2rem;
 }
 
