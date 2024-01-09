@@ -8,6 +8,7 @@
 @import url("fonts.css");
 
 /* Menu and navigation styles */
+@import url("layout/navigation/nav.css");
 @import url("layout/navigation/links.css");
 
 /* Styles for design and structure of media playes embedded from external services. */
@@ -34,7 +35,10 @@ html {
   font-family: DistantGalaxy, sans-serif;
   text-align: justify;
   min-height: 100vh;
-  background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
+  background-size: 1%;
+  background: url("https://umamimerch.com/wp-content/uploads/2021/11/Grimace.gif"), repeat;
+  /* background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat; */
+  /* BACKUP OF STARS */
   animation: gradient 100s infinite;
 }
 
@@ -352,8 +356,6 @@ section {
 }
 
 .section-island {
-  padding-top: 30px;
-  padding-bottom: 80px;
   width: 100%;
 }
 
