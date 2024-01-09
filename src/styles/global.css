@@ -35,7 +35,10 @@ html {
   font-family: DistantGalaxy, sans-serif;
   text-align: justify;
   min-height: 100vh;
-  background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat;
+  background-size: 1%;
+  background: url("https://umamimerch.com/wp-content/uploads/2021/11/Grimace.gif"), repeat;
+  /* background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat; */
+  /* BACKUP OF STARS */
   animation: gradient 100s infinite;
 }
 
