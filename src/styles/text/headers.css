@@ -6,11 +6,20 @@ h1 {
   font-size: 4rem;
   text-align: center;
   color: #0000ff;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: Rainbow 5s ease infinite;
+  animation: rainbowHeader 5s ease infinite;
 }
 
 h2 {

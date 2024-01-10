@@ -133,6 +133,13 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PPNeueMachina";
+  src: url("/fonts/PPNeueMachina/PPNeueMachina-InktrapRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 .ankh-sanctuary {
   font-family: "AnkhSanctuary";

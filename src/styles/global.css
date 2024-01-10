@@ -19,6 +19,7 @@
 
 /* Text styles */
 @import url("text/headers.css");
+@import url("text/blockquotes.css");
 @import url("content/text.css");
 
 /* Animation styles */
@@ -122,7 +123,7 @@ table thead {
 
 hr {
   border: none;
-  margin-bottom: 2px;
+  margin-bottom: 30px;
   height: 10px;
   /* Adjust as needed */
   background: url("/images/blog/layout/GIF/colorbar.gif") repeat-x;
@@ -387,19 +388,6 @@ section {
   margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-a {
-  margin-top: 0;
-  font-weight: 900;
-  font-size: 1.2rem;
-  color: #9900ff;
-}
-
-a:visited,
-a:visited {
-  color: rgb(140, 140, 140);
-  font-weight: 100;
 }
 
 .credits-section {

@@ -1,7 +1,12 @@
 a {
-  color: greenyellow;
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #9900ff;
 }
 
+a:visited,
 a:visited {
-  color: #9900ff;
+  color: greenyellow;
+  font-weight: 100;
 }
