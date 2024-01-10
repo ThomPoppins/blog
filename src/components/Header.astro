@@ -3,86 +3,9 @@ import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
 
 let { pageTitle } = Astro.props;
-
-const googleDriveHeaderImageLinks = [
-  "https://drive.google.com/uc?export=view&id=1QWJqFzMWtGJtnBVpdK43hPt0ITIkUMC1",
-  "https://drive.google.com/uc?export=view&id=1m7LX9bu7Qv85s4Y-hIoWXidSSCoZT_oG",
-  "https://drive.google.com/uc?export=view&id=1Q9DE9-1IsJvH0twQsk6x39ofi4tmr57t",
-  "https://drive.google.com/uc?export=view&id=1M3lbgDGbAWspsRbyrfP63G_GhpDbFS2X",
-  "https://drive.google.com/uc?export=view&id=15cF_RCczIo_Z6woPyWlYv2-jHcBQUGu_",
-  "https://drive.google.com/uc?export=view&id=1wwhtMY6bNC-kXxSVgYQtnPue1Y5RVqg3",
-  "https://drive.google.com/uc?export=view&id=1obFJFSVU-gWskqJq9cgjZR08RbYAuofR",
-  "https://drive.google.com/uc?export=view&id=1SaBmj5XyjRDWijUG4K6sFrf8OIxo6Z6C",
-  "https://drive.google.com/uc?export=view&id=1OmeUBbFP6__1RIxhiA0dfWUZ0RWWU_wy",
-  "https://drive.google.com/uc?export=view&id=1LYK1cBb99lH_yCSwFqeWR1oQ9n-E87lm",
-  "https://drive.google.com/uc?export=view&id=15-NZQLRCHHf9GspVtBeoaAd8NU1bMHJ4",
-  "https://drive.google.com/uc?export=view&id=1_TEyTWCCWaT4YzoOtZDGhtQ7kE8tXF_G",
-  "https://drive.google.com/uc?export=view&id=16F5MXj7TTNuy9OqjZCIKUszVihPZTnyW",
-  "https://drive.google.com/uc?export=view&id=1Svd4YsJu_5yB5_0hLnj_P8SZPP9V4MAB",
-  "https://drive.google.com/uc?export=view&id=1L_hO8X68AssUkvytPqUAYeKSiyN1Uv0s",
-  "https://drive.google.com/uc?export=view&id=1B-2z0RiGt9OhmK7_00FnQsF-H4MYys8k",
-  "https://drive.google.com/uc?export=view&id=16DsMWjuwrfF2_9o2y7QeTjOEVaR7WAx0",
-  "https://drive.google.com/uc?export=view&id=1s2wvnm81hFp5oguOTChPdB1HOUejESTF",
-  "https://drive.google.com/uc?export=view&id=1I9fhM10GF4D-tQmHf4fEEDvY-JPSmEUN",
-  "https://drive.google.com/uc?export=view&id=1mEBXGUC-aTQ2oC5No_jr7d0BHpV8segD",
-  "https://drive.google.com/uc?export=view&id=1u8OWCiMe1uZEcS66Cg7Py9EEV-dl0z0D",
-  "https://drive.google.com/uc?export=view&id=1Wss6mu_nUJtsOlRleRW6-Z04ICgxQTej",
-  "https://drive.google.com/uc?export=view&id=13aWwWD6bvLXdAqviX7Zi_dmmLfDeyTh3",
-  "https://drive.google.com/uc?export=view&id=1XPUhGYkSAfl6r9TLcSqE1VMeOwdyLDGm",
-  "https://drive.google.com/uc?export=view&id=1e8f4qBRgNW8b8eBslTv3gomLYZFJxoka",
-  "https://drive.google.com/uc?export=view&id=1Th0FnAmV1RZIXCbtONkfS-bO2pz4VJw8",
-  "https://drive.google.com/uc?export=view&id=1gYHuEIYLMD7FbA8859VWVrxAGch_sH0I",
-  "https://drive.google.com/uc?export=view&id=1yOLOH9MbFWss9Mul2sTefRFUdUggxBqr",
-  "https://drive.google.com/uc?export=view&id=1niP1M_vCCr0sG-eSrOq6KbbUilyT1yfi",
-  "https://drive.google.com/uc?export=view&id=1vwAQp02OM4i2E557dSmTkyNqsnOKWcR8",
-  "https://drive.google.com/uc?export=view&id=1_uEsmFEU2Rz1WR3k8z_2y7WriKAzGTSA",
-  "https://drive.google.com/uc?export=view&id=1U9I3Xw8zMStHLSTccJxzmmemwwW5AN4b",
-  "https://drive.google.com/uc?export=view&id=11BIiE3KAuKIW3ybKrWLJjfZarQDi2EuS",
-  "https://drive.google.com/uc?export=view&id=16YkdqAkHaY2lVO0A8H-F53PmQDHc7y22",
-  "https://drive.google.com/uc?export=view&id=1daUcweLu5K3ibEuCl-xabsALCeg3_R5c",
-  "https://drive.google.com/uc?export=view&id=1j18y9oU5MTUreE0CFdi-lF6gVGESpWNk",
-  "https://drive.google.com/uc?export=view&id=1k-obSEj0DruBbMt5SlwlH0xMoWG6ypWB",
-  "https://drive.google.com/uc?export=view&id=15tRbwP1f3G0hNJOtGYwpA2nzAFPSq4ox",
-  "https://drive.google.com/uc?export=view&id=1q3BE2NK6FWsMlXAylaP_6DcscK3R9RL9",
-  "https://drive.google.com/uc?export=view&id=1EI7ABRbKsJU-WSfU8eVU_2y52rqGfQ8E",
-  "https://drive.google.com/uc?export=view&id=15N8dM_Boze9g1PNKEvH0nenE-bm4tMg6",
-  "https://drive.google.com/uc?export=view&id=1WCE0ZMG7ADlgjAUWa2VnCeAIVw9O6RlP",
-  "https://drive.google.com/uc?export=view&id=17RcT06VdQxBmMUC7E-UUcQuht2mkHs_O",
-  "https://drive.google.com/uc?export=view&id=1i4NKR54lNWEFJrkVPrSrEXa3JeZEPq18",
-  "https://drive.google.com/uc?export=view&id=1XTHba4y4TCNMCpJtTWNBrGwGw3ZLYwh4",
-  "https://drive.google.com/uc?export=view&id=1a651_2O9zOF5NKHyKZwJ8u1fxxkimFIO",
-  "https://drive.google.com/uc?export=view&id=1sY3Su2hTAsHZcfdk-jeQi1N0kdJGfZDo",
-  "https://drive.google.com/uc?export=view&id=1vsbxMQGrd47QlqwpH5ct6iBnqfDfDw6H",
-  "https://drive.google.com/uc?export=view&id=1aZ0x7L11L9aLPD6A_oKgHtYLuQ14NhYo",
-  "https://drive.google.com/uc?export=view&id=1BjPMBDqtKazo-mSvPpv2gfFMzyViwvWz",
-  "https://drive.google.com/uc?export=view&id=12jRizs93DajowftoVDo0FEy6T-g6O9B7",
-  "https://drive.google.com/uc?export=view&id=1Sh8oCisUxkeL_StVOec8b8hnQ8DRPXjk",
-  "https://drive.google.com/uc?export=view&id=1zWxpdKpddGs5feP8vuFa4kUuHuYHr6Rc",
-  "https://drive.google.com/uc?export=view&id=1hHKnrLnGwj5dgp5N5lccK472qlIE3a-I",
-  "https://drive.google.com/uc?export=view&id=1oN-SCnxvIt2oGHSiEozdZQw_-zK5biCj",
-  "https://drive.google.com/uc?export=view&id=1oUd2bUtr1sdKWiULn3CQRjkAHJPKYw5X",
-  "https://drive.google.com/uc?export=view&id=1Xoe_x0Ob_lyEaJaH2F3oaffKmrSS3H30",
-  "https://drive.google.com/uc?export=view&id=1a1LxghJx9c9XB1Yz2ooC4ddXCh02Kr7D",
-  "https://drive.google.com/uc?export=view&id=1kvZ7l8FdjR7MgOY0asNYLYaBPkhsfftR",
-  "https://drive.google.com/uc?export=view&id=1Wa7iV9WkYH-6vLeQ-BQMv4gU9sc8GZeZ",
-  "https://drive.google.com/uc?export=view&id=1sW4dTZUbOpFY3A0b9bZ0Z1WJHdah0Yo8",
-  "https://drive.google.com/uc?export=view&id=156-o51a1Yk0nlx8pX7Nrdz8G-jOlbnAq",
-  "https://drive.google.com/uc?export=view&id=1ZvS72eEBCQ7gnqih4WRkUZJblKczVgVd",
-];
-
-function getLinkNumber() {
-  const min = 0;
-  const max = googleDriveHeaderImageLinks.length - 1;
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 ---
 
 <header>
-  <img
-    src={googleDriveHeaderImageLinks[getLinkNumber()]}
-    alt="Logo"
-    width="100%"
-  />
   <h1>{pageTitle}</h1>
   <nav>
     <Hamburger />

@@ -141,6 +141,14 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PPNeueMachinaBold";
+  src: url("/fonts/PPNeueMachina/PPNeueMachina-PlainUltrabold.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .ankh-sanctuary {
   font-family: "AnkhSanctuary";
 }
