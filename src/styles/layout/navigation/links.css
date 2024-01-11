@@ -45,31 +45,23 @@
 }
 
 .nav-links a,
+.nav-links a:visited {
+  background-color: #ff9776;
+}
+
+
+
+
+
 .nav-links a:hover,
 .nav-links a:focus,
 .nav-links a:visited {
-  background-color: #ff9776;
+
   color: #18f506;
 }
 
 @media screen and (min-width: 636px) {
-  .nav-links {
-    /* margin-left: 5em; */
-    display: block;
-    position: static;
-    width: auto;
-    background-color: #0000ff;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* color: #fff; */
-    /* padding: 0 1rem; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* z-index: 1; */
-  }
+  .nav-links {}
 
   .nav-links a {
     display: inline-block;
