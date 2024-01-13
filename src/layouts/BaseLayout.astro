@@ -34,7 +34,8 @@ const { pageTitle } = Astro.props;
 
       timer();
 
-      setTimeout(timer, 300);
+      // Call the timer function every 300 seconds (300,000 milliseconds)
+      setInterval(timer, 300000);
 
       document.querySelectorAll(".tag a").forEach((link) => {
         console.log(link.parentElement);
