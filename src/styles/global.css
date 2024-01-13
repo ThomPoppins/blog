@@ -31,6 +31,7 @@
 
 /* Animation styles */
 @import url("animations/gradient.css");
+@import url("animations/mainContentGradient.css");
 @import url("animations/rainbowHeader.css");
 @import url("animations/rainbowMainContent.css");
 @import url("animations/spotlight.css");
@@ -190,7 +191,7 @@ table tbody .author p {
 }
 
 .main-content .release-information p {
-  font-size: 150%;
+  font-size: 130%;
   color: #b4eaff;
 }
 
@@ -273,125 +274,14 @@ table tbody .author p {
   /* or any other value that fits your needs */
 }
 
-.welcome-text-island {
-  width: 100%;
-  text-align: center;
-  height: auto;
-  border-radius: 30px;
-  padding-top: 60px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 60px;
-  animation: gradient 35s ease-in-out infinite;
-  opacity: 1;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-}
-
-.proudly-presented-island {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation:
-    gradient 77s ease-in-out infinite,
-    spotlight 80s ease-in-out,
-    flubber 1000s ease-in-out infinite;
-}
-
-.stabalizing-island {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation:
-    gradient 78s ease-in-out infinite,
-    spotlight 200s ease-in-out,
-    flubber 100s ease-in-out infinite;
-}
-
-.proudly-presented-island {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 40px;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation:
-    gradient 76s ease-in-out infinite,
-    spotlight 200s ease-in-out,
-    flubber 100s ease-in-out infinite;
-}
-
-.rainbowroad-downward-deep-into-the-underground {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 40px;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation:
-    gradient 77s ease-in-out infinite,
-    spotlight 400s ease-in-out,
-    flubber 1000s ease-in-out infinite;
-}
-
-.post-image {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-section {
-  text-align: justify;
-  text-justify: inter-word;
-  background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  border-radius: 40px;
-  padding: 40px;
-  margin-bottom: 30px;
-}
-
-.section div {
-  opacity: 1;
-}
-
-.release-of-the-week-section {
-  text-align: justify;
-  text-justify: inter-word;
-  opacity: 1;
-  color: #fff;
-  border-radius: 40px;
-  padding: 40px;
-  margin-bottom: 30px;
-}
-
-.release-of-the-week-section p,
-.release-of-the-week-section .header-island,
-.release-of-the-week-section .header-island h2 {
-  background-color: #4b08d2;
-  padding: 10px;
-  color: #fff;
-}
-
-.release-of-the-week-section h2 {
-  margin-top: 0;
-  color: #4b08d2;
-}
-
-.release-of-the-week-section h3 {
-  margin-top: 0;
-  color: #4b08d2;
-}
-
 .main-content {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
+  background-size: 800% 800%;
   padding: 30px;
-  animation:
-    color-change 100s infinite,
-    gradient 10s infinite; /* This will apply the animation */
+  animation: mainContentGradient 0.5s infinite; /* This will apply the animation */
 }
 
 @keyframes color-change {
