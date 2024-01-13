@@ -8,6 +8,19 @@ const { frontmatter } = Astro.props;
   featuredUrl={frontmatter.featuredUrl}
   image={frontmatter.image}
 >
-  <slot />
-  <hr />
+  <div class="tags">
+    {
+      frontmatter.tags
+        .sort((a, b) => a.localeCompare(b))
+        .map((tag) => (
+          <p class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </p>
+        ))
+    }
+
+    {console.log(frontmatter.tags)}
+
+    <slot />
+  </div>
 </BaseLayout>
