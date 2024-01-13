@@ -32,6 +32,8 @@ const { pageTitle } = Astro.props;
         element.style.animation = `gradient ${randomDuration1}s ease-in-out infinite, moonZoom ${randomDuration2}s ease-in-out infinite`;
       }
 
+      timer();
+
       setTimeout(timer, 300);
 
       document.querySelectorAll(".tag a").forEach((link) => {
