@@ -1,6 +1,7 @@
 .bandcamp-final-credits {
-  margin-top: 0;
-  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
   line-height: 0.8rem;
   font-style: italic;
   color: #00ff6a;
