@@ -10,24 +10,24 @@ let { pageTitle, featuredUrl, image } = Astro.props;
     <Hamburger />
     <Navigation />
   </nav>
+
+  {
+    featuredUrl ? (
+      <h1 class="page-title">
+        <a href={featuredUrl} target="_blank">
+          {pageTitle}
+        </a>
+      </h1>
+    ) : (
+      <h1 class="page-title">{pageTitle}</h1>
+    )
+  }
+
+  {
+    image ? (
+      <div class="featured-image">
+        <img src={image} alt={pageTitle} />
+      </div>
+    ) : null
+  }
 </header>
-
-{
-  featuredUrl ? (
-    <h1 class="page-title">
-      <a href={featuredUrl} target="_blank">
-        {pageTitle}
-      </a>
-    </h1>
-  ) : (
-    <h1 class="page-title">{pageTitle}</h1>
-  )
-}
-
-{
-  image ? (
-    <div class="featured-image">
-      <img src={image} alt={pageTitle} />
-    </div>
-  ) : null
-}
