@@ -37,6 +37,31 @@ const { pageTitle, featuredUrl, image } = Astro.props;
 
       // Call the timer function every 300 seconds (300,000 milliseconds)
       setInterval(timer, 300000);
+
+      // Add the event listener to the body to listen for the click event
+      document.body.addEventListener("click", () => {
+        // Remove the animation styles from the element
+        element.style.animation = "";
+        // Call the timer function to apply the animation styles to the element
+        timer();
+      });
+
+      // Add the event listener to the body to listen for the mousemove event
+
+      document.body.addEventListener("mousemove", () => {
+        // Remove the animation styles from the element
+        element.style.animation = "";
+        // Call the timer function to apply the animation styles to the element
+        timer();
+      });
+
+      // Add the event listener to the body to listen for the touchmove event
+      document.body.addEventListener("touchmove", () => {
+        // Remove the animation styles from the element
+        element.style.animation = "";
+        // Call the timer function to apply the animation styles to the element
+        timer();
+      });
     </script>
   </body>
 </html>
