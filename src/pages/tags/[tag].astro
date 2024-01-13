@@ -6,18 +6,17 @@ const allPosts = await Astro.glob("../posts/music/*.mdx");
 
 const { tag } = Astro.params;
 const filteredPosts = allPosts.filter((post) =>
-  post.frontmatter.tags?.includes(tag),
+  post.frontmatter.tags?.includes(tag)
 );
 ---
 
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
-
-  <ul>
+  <div class="tags">
     {
       filteredPosts.map((post) => (
         <BlogPostLink url={post.url} title={post.frontmatter.title} />
       ))
     }
-  </ul>
+  </div>
 </BaseLayout>

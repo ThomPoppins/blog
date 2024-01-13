@@ -33,6 +33,13 @@ const { pageTitle } = Astro.props;
       }
 
       setTimeout(timer, 300);
+
+      document.querySelectorAll(".tag a").forEach((link) => {
+        console.log(link.parentElement);
+        if (link.parentElement) {
+          link.parentElement.classList.add("visited");
+        }
+      });
     </script>
     <Analytics />
   </body>

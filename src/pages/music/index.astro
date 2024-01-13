@@ -7,12 +7,12 @@ const pageTitle = "Music";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div>
+  <div class="tags">
     {
       tags
         .sort((a, b) => a.localeCompare(b))
         .map((tag) => (
-          <p>
+          <p class="tag">
             <a href={`/tags/${tag}`}>{tag}</a>
           </p>
         ))
