@@ -27,7 +27,7 @@ pnpm-lock.yaml
 public
 
 # Add fonts to git
-!public/fonts/*.ttf
+!public/fonts/
 
 # Images not to be ignored
 !public/images/blog/layout/GIF/colorbar.gif
