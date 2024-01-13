@@ -1,0 +1,35 @@
+h2.spotlight-header {
+  background: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+h2.spotlight-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0));
+  transform: translateX(-50%);
+  animation: spotlight 2s infinite;
+}
+
+@keyframes spotlight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

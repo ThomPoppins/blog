@@ -4,15 +4,18 @@
 	position: relative;
 	overflow: hidden;
 }
+
 .modal.mod-importer .modal-title {
 	padding: 0 var(--size-4-4);
 }
+
 .modal.mod-importer .modal-content {
 	overflow: auto;
 	padding: var(--size-4-4);
 	margin-bottom: calc(var(--input-height) + var(--size-4-8));
 	border-top: var(--border-width) solid var(--background-modifier-border);
 }
+
 .modal.mod-importer .modal-button-container {
 	margin: 0 0 0 calc(var(--size-4-4) * -1);
 	padding: var(--size-4-4);
@@ -49,7 +52,6 @@
 .importer-stats-container {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: var(--size-4-5);
 	margin-bottom: var(--size-4-5);
 }
 

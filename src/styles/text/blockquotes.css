@@ -1,0 +1,25 @@
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: #40ff00;
+  margin-bottom: 30px;
+  text-align: start;
+  background: linear-gradient(-45deg, #00ff15, #00f7ff, #00bbff, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowHeader 1s ease infinite;
+
+}
+
+blockquote footer {
+  font-family: SundropsDisplay, sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-align: end;
+}
+
+blockquote footer:before {
+  content: "— ";
+}

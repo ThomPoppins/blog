@@ -10,21 +10,15 @@ tags:
   [
     "Acid Techno",
     "Tekno",
-    "Flatlife",
     "Acid Tekno",
     "AcidCore",
     "Acid",
     "Techno",
-    "Hard Techno",
     "Hardtechno",
     "Rave",
-    "Techno Race",
+    "Techno Rave",
     "Experimental",
-    "Breakcore",
-    "Venetian Snares",
-    "Twisted",
-    "Planet Mu",
-    "Artist",
+    "Breakcore"
   ]
 ---
 

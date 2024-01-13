@@ -12,11 +12,7 @@ tags:
     "UK Hardcore",
     "Hardcore",
     "Gabber",
-    "Rave",
-    "Hellfish",
-    "Deathchant",
-    "Deathchant Records",
-    "Deathchant",
+    "Rave"
   ]
 ---
 

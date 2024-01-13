@@ -2,30 +2,34 @@
 h1 {
   margin: 0;
   font-family: "Nosifer", cursive;
-  font-weight: 100;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   color: #0000ff;
+}
+
+
+h1,
+h4,
+h5,
+h6 {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: Rainbow 5s ease infinite;
+  animation: rainbowHeader 5s ease infinite;
 }
 
 h2 {
-  color: #52ff97;
-  font-size: 3.2em;
+  font-size: 2.6rem;
   text-align: center;
-  font-family: DistantGalaxy, sans-serif;
+  font-family: PPNeueMachinaBold, sans-serif;
 }
 
 h3 {
-  color: #ff7070;
-
-  font-size: 2.2em;
+  color: hsl(19, 100%, 50%);
+  font-size: 1.6rem;
   text-align: center;
-  font-family: DistantGalaxy, sans-serif;
+  font-family: PsychofunRegular, sans-serif;
 }
 
 h4 {
@@ -37,14 +41,23 @@ h4 {
 
 h5 {
   color: #52ff97;
-  font-size: 2em;
+  font-size: 1.3em;
   text-align: center;
   font-family: DistantGalaxy, sans-serif;
 }
 
 h6 {
   color: #52ff97;
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-align: center;
   font-family: DistantGalaxy, sans-serif;
+}
+
+h2.autoplay-header {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+p.autoplay-header-subtext {
+  text-align: center;
 }

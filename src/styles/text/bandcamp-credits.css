@@ -1,0 +1,21 @@
+.bandcamp-final-credits {
+  margin-top: 0;
+  margin-top: 50px;
+  line-height: 0.8rem;
+  font-style: italic;
+  color: #00ff6a;
+  text-align: center;
+}
+
+.bandcamp-final-credits strong {
+  font-size: 150%;
+  color: #00ff6a;
+  margin-top: 50px;
+}
+
+.thank-you-supporters-on-bandcamp {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: DistantGalaxy, sans-serif;
+}
