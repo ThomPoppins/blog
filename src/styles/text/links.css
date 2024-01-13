@@ -2,19 +2,22 @@ a {
   margin-top: 0;
   font-weight: 900;
   font-size: 1.2rem;
-  color: #9900ff;
+  color: #00ff08;
 }
 
 a:visited,
 a:visited {
-  color: greenyellow;
+  color: rgb(64, 0, 96);
   font-weight: 100;
 }
+
+
 
 .tags {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .tag {
   margin: 0.25em;
@@ -22,5 +25,13 @@ a:visited {
   border-radius: 0.5em;
   padding: 0.5em 1em;
   font-size: 1.15em;
-  background-color: #f8fcfd;
+  background-color: #00ff1a;
+}
+
+.tag a {
+  color: #fff;
+} 
+
+.tag.visited {
+  background-color: rgb(87, 0, 150);
 }
