@@ -6,6 +6,6 @@
   overflow: hidden;
 }
 
-.bandcamp-album {
-  width: 100% !important;
+.bandcamp-player {
+  margin-bottom: 0px;
 }

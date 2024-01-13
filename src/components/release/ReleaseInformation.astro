@@ -1,6 +1,14 @@
 ---
-const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
-  Astro.props;
+const {
+  releaseDate,
+  label,
+  catalogNumber,
+  series,
+  country,
+  genre,
+  imgUrl,
+  imgAlt,
+} = Astro.props;
 ---
 
 {
@@ -16,15 +24,16 @@ const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
     imgAlt="First Cenobite Release Album Cover"
   />
 
-  <ReleaseInformation
-  releaseDate="YYYY-MM-DD"
+<ReleaseInformation
+  releaseDate=""
   label=""
   catalogNumber=""
-  country=""
+  series=""
+  country="Malden, Netherlands"
   genre=""
-  imgUrl=""
+  imgUrl="image url of the physical release"
   imgAlt=""
-/>
+  />
 */
 }
 <div
@@ -50,6 +59,7 @@ const { releaseDate, label, catalogNumber, country, genre, imgUrl, imgAlt } =
     {releaseDate ? <p>Date: {releaseDate}</p> : ""}
     {label ? <p>Label: {label}</p> : ""}
     {catalogNumber ? <p>Catalog Number:{catalogNumber}</p> : ""}
+    {series ? <p>Series:{series}</p> : ""}
     {country ? <p>Country: {country}</p> : ""}
     {genre ? <p>Genre: {genre}</p> : ""}
   </div>

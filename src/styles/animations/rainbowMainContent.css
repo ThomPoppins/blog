@@ -1,0 +1,13 @@
+@keyframes rainbowMainContent {
+  0% {
+    background-position: 0% 500%;
+  }
+
+  50% {
+    background-position: 1000% 500%;
+  }
+
+  100% {
+    background-position: 0% 500%;
+  }
+}

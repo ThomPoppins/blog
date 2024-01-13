@@ -4,6 +4,10 @@
     "ahmadawais.shades-of-purple",
     "dbaeumer.vscode-eslint",
     "github.copilot",
-    "github.copilot-chat"
+    "github.copilot-chat",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "s-nlf-fh.glassit"
   ]
 }

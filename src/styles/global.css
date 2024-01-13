@@ -7,6 +7,9 @@
  */
 @import url("fonts.css");
 
+/* Content styling */
+@import url("content/images.css");
+
 /* Menu and navigation styles */
 @import url("layout/navigation/nav.css");
 @import url("layout/navigation/links.css");
@@ -16,19 +19,20 @@
 @import url("players/soundcloud.css");
 @import url("players/youtube.css");
 
-
 /* Text styles */
 @import url("text/headers.css");
 @import url("text/review.css");
 @import url("text/links.css");
-@import url("text/bandcamp-credits.css");
+@import url("text/bandcamp.css");
 @import url("text/blockquotes.css");
+@import url("text/paragraphs.css");
 @import url("text/spotlight.css");
-@import url("content/text.css");
+@import url("content/images.css");
 
 /* Animation styles */
 @import url("animations/gradient.css");
 @import url("animations/rainbowHeader.css");
+@import url("animations/rainbowMainContent.css");
 @import url("animations/spotlight.css");
 @import url("animations/moonZoom.css");
 
@@ -42,27 +46,27 @@ html {
   text-align: justify;
   min-height: 100vh;
   background-size: 1%;
-  background: url("https://umamimerch.com/wp-content/uploads/2021/11/Grimace.gif"), repeat;
+  background: url("https://umamimerch.com/wp-content/uploads/2021/11/Grimace.gif"),
+    repeat;
   /* background: url("/images/blog/layout/GIF/TRAVELING-STARS.gif"), repeat; */
   /* BACKUP OF STARS */
-  animation: gradient 100s infinite;
+  animation:
+    gradient 200s infinite,
+    moonZoom 50s ease-in-out infinite;
 }
-
 
 body {
   padding: 0;
   margin: 0 auto;
-  width: 700px;
+  width: 100vw;
   padding: 1rem;
   text-align: start;
 }
-
 
 iframe html {
   margin-left: 100px;
   margin-right: auto;
 }
-
 
 /* height: 100vh;
   margin: 0;
@@ -176,7 +180,6 @@ table tbody .author p {
 }
 
 .release-information {
-
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -211,7 +214,9 @@ table tbody .author p {
   /* background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff); */
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
 
-  animation: gradient 30s ease-in-out infinite, 120s spotlight,
+  animation:
+    gradient 30s ease-in-out infinite,
+    120s spotlight,
     flubber 120s ease-in-out infinite;
   /* text-align: center; */
   display: flex;
@@ -288,7 +293,9 @@ table tbody .author p {
   padding-left: 30px;
   padding-right: 30px;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation: gradient 77s ease-in-out infinite, spotlight 80s ease-in-out,
+  animation:
+    gradient 77s ease-in-out infinite,
+    spotlight 80s ease-in-out,
     flubber 1000s ease-in-out infinite;
 }
 
@@ -298,7 +305,9 @@ table tbody .author p {
   padding-left: 30px;
   padding-right: 30px;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation: gradient 78s ease-in-out infinite, spotlight 200s ease-in-out,
+  animation:
+    gradient 78s ease-in-out infinite,
+    spotlight 200s ease-in-out,
     flubber 100s ease-in-out infinite;
 }
 
@@ -309,7 +318,9 @@ table tbody .author p {
   padding-right: 30px;
   margin-bottom: 40px;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation: gradient 76s ease-in-out infinite, spotlight 200s ease-in-out,
+  animation:
+    gradient 76s ease-in-out infinite,
+    spotlight 200s ease-in-out,
     flubber 100s ease-in-out infinite;
 }
 
@@ -320,7 +331,9 @@ table tbody .author p {
   padding-right: 30px;
   margin-bottom: 40px;
   background: url("/images/blog/layout/GIF/glasslike-visual.gif") repeat;
-  animation: gradient 77s ease-in-out infinite, spotlight 400s ease-in-out,
+  animation:
+    gradient 77s ease-in-out infinite,
+    spotlight 400s ease-in-out,
     flubber 1000s ease-in-out infinite;
 }
 
@@ -372,12 +385,31 @@ section {
 }
 
 .main-content {
-  width: 100%;
-  margin: 0 auto;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  animation:
+    color-change 100s infinite,
+    gradient 10s infinite; /* This will apply the animation */
 }
 
-.main-content p {
-  font-size: 1.2rem;
+@keyframes color-change {
+  0% {
+    background: #ee7752;
+  }
+  25% {
+    background: #e73c7e;
+  }
+  50% {
+    background: #23a6d5;
+  }
+  75% {
+    background: #23d5ab;
+  }
+  100% {
+    background: #ee7752;
+  }
 }
 
 .spotlight-release {

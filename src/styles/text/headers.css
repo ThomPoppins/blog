@@ -1,12 +1,12 @@
 /* Headers */
-h1 {
+h1,
+h1 a {
   margin: 0;
   font-family: "Nosifer", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   color: #0000ff;
 }
-
 
 h1,
 h4,
@@ -20,35 +20,39 @@ h6 {
 }
 
 h2 {
-  font-size: 2.6rem;
   text-align: center;
   font-family: PPNeueMachinaBold, sans-serif;
 }
 
+h2,
+h2 a {
+  font-size: 1.8rem;
+}
+
 h3 {
   color: hsl(19, 100%, 50%);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: PsychofunRegular, sans-serif;
 }
 
 h4 {
   color: #bc89ff;
-  font-size: 1.7em;
+  font-size: 1.3rem;
   text-align: center;
   font-family: DistantGalaxy, sans-serif;
 }
 
 h5 {
   color: #52ff97;
-  font-size: 1.3em;
+  font-size: 1.1rem;
   text-align: center;
   font-family: DistantGalaxy, sans-serif;
 }
 
 h6 {
   color: #52ff97;
-  font-size: 1.1em;
+  font-size: 1rem;
   text-align: center;
   font-family: DistantGalaxy, sans-serif;
 }

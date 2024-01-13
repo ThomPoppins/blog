@@ -2,7 +2,7 @@
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
 
-let { pageTitle } = Astro.props;
+let { pageTitle, featuredUrl, image } = Astro.props;
 ---
 
 <header>
@@ -11,4 +11,23 @@ let { pageTitle } = Astro.props;
     <Navigation />
   </nav>
 </header>
-<h1 class="page-title">{pageTitle}</h1>
+
+{
+  featuredUrl ? (
+    <h1 class="page-title">
+      <a href={featuredUrl} target="_blank">
+        {pageTitle}
+      </a>
+    </h1>
+  ) : (
+    <h1 class="page-title">{pageTitle}</h1>
+  )
+}
+
+{
+  image ? (
+    <div class="featured-image">
+      <img src={image} alt={pageTitle} />
+    </div>
+  ) : null
+}

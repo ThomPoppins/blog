@@ -4,18 +4,18 @@
   }
 
   25% {
-    background-position: 100% 0%;
+    background-position: 10% 0%;
   }
 
   50% {
-    background-position: 100% 100%;
+    background-position: 10% 10%;
   }
 
   75% {
-    background-position: 0% 100%;
+    background-position: 0% 10%;
   }
 
   100% {
-    background-position: 100% 0%;
+    background-position: 10% 0%;
   }
 }

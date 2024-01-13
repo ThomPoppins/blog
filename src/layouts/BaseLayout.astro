@@ -1,9 +1,8 @@
 ---
-import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-const { pageTitle } = Astro.props;
+const { pageTitle, featuredUrl, image } = Astro.props;
 ---
 
 <!-- {/* TODO: Place the website logo on top of the navigation. */} -->
@@ -13,19 +12,21 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>un-sheeple.me | {pageTitle}</title>
   </head>
   <body>
-    <Header pageTitle={pageTitle} />
-    <slot />
-    <Footer />
+    <Header pageTitle={pageTitle} featuredUrl={featuredUrl} image={image} />
+    <div class="main-content">
+      <slot />
+      <Footer />
+    </div>
     <script>
       import "../scripts/menu.js";
       // Select the body
       const element = document.querySelector("html");
       // Timer function to be called every 60 seconds to set the anymationlenth to a new value
       function timer() {
-        const randomDuration1 = Math.random() * 200 + 100;
+        const randomDuration1 = Math.random() * 20 + 10;
         const randomDuration2 = Math.random() * 100 + 30;
 
         // Apply the animation styles to the element
@@ -36,14 +37,6 @@ const { pageTitle } = Astro.props;
 
       // Call the timer function every 300 seconds (300,000 milliseconds)
       setInterval(timer, 300000);
-
-      document.querySelectorAll(".tag a").forEach((link) => {
-        console.log(link.parentElement);
-        if (link.parentElement) {
-          link.parentElement.classList.add("visited");
-        }
-      });
     </script>
-    <Analytics />
   </body>
 </html>

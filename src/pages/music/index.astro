@@ -1,8 +1,17 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ReleaseInformation from "../../components/release/ReleaseInformation.astro";
-const allPosts = await Astro.glob("../posts/music/*.mdx");
-const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+
+type Post = {
+  frontmatter: {
+    tags: string[];
+  };
+};
+
+const allPosts: Post[] = await Astro.glob("../posts/music/*.mdx");
+const tags: string[] = [
+  ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
+];
 
 const pageTitle = "Music";
 ---
@@ -30,7 +39,7 @@ const pageTitle = "Music";
     scrolling="no"
     frameborder="no"
     allow="autoplay"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/655816764&color=%2384182e&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/655816764&color=%2384182e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   ></iframe><div
     style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
   >
@@ -1409,4 +1418,26 @@ const pageTitle = "Music";
     ><a href="https://fedfed.bandcamp.com/album/the-best-of-fed-vol-4">The Best
     of Fed. vol.4 by FED.</a></iframe
   >
+
+  <iframe
+    width="100%"
+    height="450"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1052884039&color=%232b2b30&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+  ></iframe><div
+    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
+  >
+    <a
+      href="https://soundcloud.com/superbad-midi-breaks"
+      title="Superbad MIDI Breaks"
+      target="_blank"
+      style="color: #cccccc; text-decoration: none;">Superbad MIDI Breaks</a
+    > · <a
+      href="https://soundcloud.com/superbad-midi-breaks/sets/sbmb-hardcore-radio"
+      title="SBMB HARDCORE RADIO"
+      target="_blank"
+      style="color: #cccccc; text-decoration: none;">SBMB HARDCORE RADIO</a>
+  </div>
 </BaseLayout>
