@@ -1,0 +1,21 @@
+.main-content {
+  user-select: none;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
+  background-size: 800% 800%;
+  padding: 30px;
+  animation: mainContentGradient 0.5s infinite; /* This will apply the animation */
+}
+
+.second-layer {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
+  background-size: 800% 800%;
+  padding: 30px;
+  border: 10px solid #fff;
+  animation: mainContentGradient 0.5s infinite; /* This will apply the animation */
+}
