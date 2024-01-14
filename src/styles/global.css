@@ -132,6 +132,7 @@ table thead {
 
 hr {
   border: none;
+  width: 100%;
   margin-bottom: 30px;
   height: 10px;
   /* Adjust as needed */
