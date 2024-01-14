@@ -28,6 +28,10 @@ const { pageTitle, featuredUrl, image } = Astro.props;
       const mainContent = document.querySelector(
         ".main-content"
       ) as HTMLElement; // Timer function to be called every 60 seconds to set the anymationlenth to a new value
+
+      const secondLayer = document.querySelector(
+        ".second-layer"
+      ) as HTMLElement; // Timer function to be called every 60 seconds to set the anymationlenth to a new value
       function timer() {
         const randomDuration1 = Math.random() * 20 + 10;
         const randomDuration2 = Math.random() * 100 + 30;
@@ -38,20 +42,52 @@ const { pageTitle, featuredUrl, image } = Astro.props;
 
       function mainContentTimer() {
         // Get a random color code
-        const randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
-        const randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
-        const randomColor3 = Math.floor(Math.random() * 16777215).toString(16);
-        const randomColor4 = Math.floor(Math.random() * 16777215).toString(16);
-        const randomColor5 = Math.floor(Math.random() * 16777215).toString(16);
-
-        console.log("random color", randomColor1);
+        const randomMainContentColor1 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomMainContentColor2 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomMainContentColor3 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomMainContentColor4 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomMainContentColor5 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
 
         // Get a random number between 0.5 and 5
-        const randomSeconds = Math.random() * (5 - 1) + 1;
+        let randomSeconds = Math.random() * (5 - 1) + 1;
 
         // Apply the animation styles to the element
         mainContent.style.animation = `mainContentGradient ${randomSeconds}s ease-in-out infinite`;
-        mainContent.style.backgroundImage = `linear-gradient(45deg, #${randomColor1}, #${randomColor2}, #${randomColor3}, #${randomColor4}, #${randomColor5})`;
+        mainContent.style.backgroundImage = `linear-gradient(45deg, #${randomMainContentColor1}, #${randomMainContentColor2}, #${randomMainContentColor3}, #${randomMainContentColor4}, #${randomMainContentColor5})`;
+
+        // Get a random color code
+        const randomSecondLayerColor1 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomSecondLayerColor2 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomSecondLayerColor3 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomSecondLayerColor4 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+        const randomSecondLayerColor5 = Math.floor(
+          Math.random() * 16777215
+        ).toString(16);
+
+        // Get a random number between 0.5 and 5
+        randomSeconds = Math.random() * (5 - 1) + 1;
+
+        // Apply the animation styles to the element
+        secondLayer.style.animation = `mainContentGradient ${randomSeconds}s ease-in-out infinite`;
+        secondLayer.style.backgroundImage = `linear-gradient(45deg, #${randomMainContentColor1}, #${randomMainContentColor2}, #${randomMainContentColor3}, #${randomMainContentColor4}, #${randomMainContentColor5})`;
       }
 
       // Call the timer function to apply the animation styles to the element
