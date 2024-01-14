@@ -31,7 +31,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@sentry/astro": "^7.91.0",
+    "@sentry/astro": "^7.93.0",
     "@spotlightjs/astro": "^1.0.9",
     "@typescript-eslint/parser": "^6.16.0",
     "eslint": "^8.56.0",
