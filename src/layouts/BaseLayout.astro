@@ -82,8 +82,8 @@ const { pageTitle, featuredUrl, image } = Astro.props;
           Math.random() * 16777215
         ).toString(16);
 
-        // Get a random number between 0.5 and 5
-        randomSeconds = Math.random() * (5 - 1) + 1;
+        // Get a random number between 0.5 and 15
+        randomSeconds = Math.random() * (15 - 5) + 5;
 
         // Apply the animation styles to the element
         secondLayer.style.animation = `mainContentGradient ${randomSeconds}s ease-in-out infinite`;
@@ -100,29 +100,28 @@ const { pageTitle, featuredUrl, image } = Astro.props;
       // Add the event listener to the body to listen for the click event
       document.body.addEventListener("click", () => {
         // Remove the animation styles from the element
-        element.style.animation = "";
+        // element.style.animation = "";
         // Call the timer function to apply the animation styles to the element
-        timer();
+        // timer();
         mainContentTimer();
       });
 
       // Add the event listener to the body to listen for the mousemove event
 
       document.body.addEventListener("mousemove", () => {
-        // Remove the animation styles from the element
+        //   // Remove the animation styles from the element
         element.style.animation = "";
-        // Call the timer function to apply the animation styles to the element
+        //   // Call the timer function to apply the animation styles to the element
         timer();
       });
 
-      // Add the event listener to the body to listen for the touchmove event
-      document.body.addEventListener("touchmove", () => {
-        // Remove the animation styles from the element
-        element.style.animation = "";
-        // Call the timer function to apply the animation styles to the element
-        timer();
-        mainContentTimer();
-      });
+      // // Add the event listener to the body to listen for the touchmove event
+      // document.body.addEventListener("touchmove", () => {
+      //   // Remove the animation styles from the element
+      //   element.style.animation = "";
+      //   // Call the timer function to apply the animation styles to the element
+      //   timer();
+      // });
     </script>
   </body>
 </html>

@@ -13,6 +13,7 @@
 /* Menu and navigation styles */
 @import url("layout/navigation/nav.css");
 @import url("layout/navigation/links.css");
+@import url("layout/content/main.css");
 
 /* Styles for design and structure of media playes embedded from external services. */
 @import url("players/bandcamp.css");
@@ -272,44 +273,6 @@ table tbody .author p {
   width: 100%;
   height: 100%;
   /* or any other value that fits your needs */
-}
-
-.main-content {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
-  background-size: 800% 800%;
-  padding: 30px;
-  animation: mainContentGradient 0.5s infinite; /* This will apply the animation */
-}
-
-.second-layer {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
-  background-size: 800% 800%;
-  padding: 30px;
-  animation: mainContentGradient 0.5s infinite; /* This will apply the animation */
-}
-
-@keyframes color-change {
-  0% {
-    background: #ee7752;
-  }
-  25% {
-    background: #e73c7e;
-  }
-  50% {
-    background: #23a6d5;
-  }
-  75% {
-    background: #23d5ab;
-  }
-  100% {
-    background: #ee7752;
-  }
 }
 
 .spotlight-release {

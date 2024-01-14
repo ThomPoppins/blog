@@ -22,12 +22,13 @@ h6 {
 h2 {
   text-align: center;
   font-family: PPNeueMachinaBold, sans-serif;
+  color: #6600ff;
 }
 
 h2,
 h2 a {
-  font-size: 2.6rem;
-  font-family: fantasy;
+  font-size: 2rem;
+  font-family: AnkhSanctuary;
 }
 
 h3 {
