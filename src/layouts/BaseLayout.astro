@@ -15,8 +15,15 @@ const { pageTitle, featuredUrl, image } = Astro.props;
     <title>un-sheeple.me | {pageTitle}</title>
   </head>
   <body>
-    <Header pageTitle={pageTitle} featuredUrl={featuredUrl} image={image} />
+    <Header pageTitle={pageTitle} featuredUrl={featuredUrl} />
     <div class="main-content">
+      {
+        image ? (
+          <div class="featured-image">
+            <img src={image} alt={pageTitle} />
+          </div>
+        ) : null
+      }
       <slot />
       <Footer />
     </div>

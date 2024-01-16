@@ -22,12 +22,4 @@ let { pageTitle, featuredUrl, image } = Astro.props;
       <h1 class="page-title">{pageTitle}</h1>
     )
   }
-
-  {
-    image ? (
-      <div class="featured-image">
-        <img src={image} alt={pageTitle} />
-      </div>
-    ) : null
-  }
 </header>
