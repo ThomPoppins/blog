@@ -17,6 +17,7 @@
     "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^2.0.0",
     "@astrojs/react": "^3.0.9",
+    "@astrojs/rss": "^4.0.2",
     "@astrojs/vercel": "^6.1.3",
     "@vercel/analytics": "^1.1.1",
     "@web3-storage/w3up-client": "^11.2.1",
@@ -31,7 +32,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@sentry/astro": "^7.91.0",
+    "@sentry/astro": "^7.93.0",
     "@spotlightjs/astro": "^1.0.9",
     "@typescript-eslint/parser": "^6.16.0",
     "eslint": "^8.56.0",
