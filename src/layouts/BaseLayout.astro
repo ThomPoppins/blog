@@ -49,6 +49,9 @@ const { pageTitle, featuredUrl, image } = Astro.props;
           element.style.animation = `gradient ${randomDuration1}s ease-in-out infinite, moonZoom ${randomDuration2}s ease-in-out infinite`;
         }
 
+        // Get a random number between 0.5 and 5
+        let randomSeconds = Math.random() * (5 - 1) + 1;
+
         function mainContentTimer() {
           if (mainContent) {
             // Get a random color code
@@ -67,9 +70,6 @@ const { pageTitle, featuredUrl, image } = Astro.props;
             const randomMainContentColor5 = Math.floor(
               Math.random() * 16777215
             ).toString(16);
-
-            // Get a random number between 0.5 and 5
-            let randomSeconds = Math.random() * (5 - 1) + 1;
 
             // Apply the animation styles to the element
             mainContent.style.animation = `mainContentGradient ${randomSeconds}s ease-in-out infinite`;
