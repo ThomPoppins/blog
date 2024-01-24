@@ -7,7 +7,6 @@ h1 a {
   text-align: center;
   color: #0000ff;
 }
-
 h1,
 h4,
 h5,
@@ -18,19 +17,16 @@ h6 {
   -webkit-text-fill-color: transparent;
   animation: rainbowHeader 5s ease infinite;
 }
-
 h2 {
   text-align: center;
   font-family: PPNeueMachinaBold, sans-serif;
   color: #fff;
 }
-
 h2,
 h2 a {
   font-size: 2rem;
   font-family: AnkhSanctuary;
 }
-
 h3 {
   color: hsl(19, 100%, 50%);
   font-size: 1.5rem;
