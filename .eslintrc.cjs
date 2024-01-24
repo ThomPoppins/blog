@@ -1,78 +1,131 @@
+// SOURCE eslint config for Astro: https://github.com/withastro/astro/blob/main/.eslintrc.cjs
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { builtinModules } = require('module');
+
+/** @type {import("@types/eslint").Linter.Config} */
 module.exports = {
-  // ...
+  extends: [
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'prettier',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./packages/*/tsconfig.json', './tsconfig.eslint.json'],
+    tsconfigRootDir: __dirname,
+  },
+  plugins: ['@typescript-eslint', 'prettier', 'no-only-tests'],
+  rules: {
+    // These off/configured-differently-by-default rules fit well for us
+    '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+        ignoreRestSiblings: true,
+      },
+    ],
+    'no-only-tests/no-only-tests': 'error',
+    '@typescript-eslint/no-shadow': ['error'],
+    'no-console': 'warn',
+
+    // Todo: do we want these?
+    '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/class-literal-property-style': 'off',
+    '@typescript-eslint/consistent-indexed-object-style': 'off',
+    '@typescript-eslint/consistent-type-definitions': 'off',
+    '@typescript-eslint/dot-notation': 'off',
+    '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
+    '@typescript-eslint/no-this-alias': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'off',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'off',
+    '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/sort-type-constituents': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+
+    // Enforce separate type imports for type-only imports to avoid bundling unneeded code
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        prefer: 'type-imports',
+        fixStyle: 'separate-type-imports',
+        disallowTypeAnnotations: false,
+      },
+    ],
+
+    // These rules enabled by the preset configs don't work well for us
+    '@typescript-eslint/await-thenable': 'off',
+    'prefer-const': 'off',
+  },
   overrides: [
     {
-      // Define the configuration for `.astro` file.
-      files: ["*.astro"],
-      // Enable this plugin
-      plugins: ["astro"],
-      env: {
-        // Enables global variables available in Astro components.
-        node: true,
-        "astro/astro": true,
-        es2020: true,
-      },
-      // Allows Astro components to be parsed.
-      parser: "astro-eslint-parser",
-      // Parse the script in `.astro` as TypeScript by adding the following configuration.
-      // It's the setting you need when using TypeScript.
-      parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
-        // The script of Astro components uses ESM.
-        sourceType: "module",
-      },
+      // Ensure Node builtins aren't included in Astro's server runtime
+      files: ['packages/astro/src/runtime/**/*.ts'],
       rules: {
-        // Enable recommended rules
-        "astro/no-conflict-set-directives": "error",
-        "astro/no-unused-define-vars-in-style": "error",
-
-        // override/add rules settings here, such as:
-        // "astro/no-set-html-directive": "error"
+        'no-restricted-imports': [
+          'error',
+          {
+            paths: [...builtinModules],
+            patterns: ['node:*'],
+          },
+        ],
       },
     },
     {
-      // Define the configuration for `<script>` tag.
-      // Script in `<script>` is assigned a virtual file name with the `.js` extension.
-      files: ["**/*.astro/*.js", "*.astro/*.js"],
+      files: ['packages/astro/src/runtime/client/**/*.ts'],
       env: {
         browser: true,
-        es2020: true,
-      },
-      parserOptions: {
-        sourceType: "module",
-      },
-      rules: {
-        // override/add rules settings here, such as:
-        // "no-unused-vars": "error"
-
-        // If you are using "prettier/prettier" rule,
-        // you don't need to format inside <script> as it will be formatted as a `.astro` file.
-        "prettier/prettier": "off",
       },
     },
     {
-      // Define the configuration for `<script>` tag when using `client-side-ts` processor.
-      // Script in `<script>` is assigned a virtual file name with the `.js` extension.
-      files: ["**/*.astro/*.ts", "*.astro/*.ts"],
+      files: ['packages/**/test/*.js', 'packages/**/*.js'],
       env: {
-        browser: true,
-        es2020: true,
+        mocha: true,
       },
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        sourceType: "module",
-        project: null,
+      globals: {
+        globalThis: false, // false means read-only
       },
       rules: {
-        // override/add rules settings here, such as:
-        // "no-unused-vars": "error"
-
-        // If you are using "prettier/prettier" rule,
-        // you don't need to format inside <script> as it will be formatted as a `.astro` file.
-        "prettier/prettier": "off",
+        'no-console': 'off',
       },
     },
-    // ...
+    {
+      files: ['packages/integrations/**/*.ts'],
+      rules: {
+        'no-console': ['error', { allow: ['warn', 'error', 'info', 'debug'] }],
+      },
+    },
+    {
+      files: ['benchmark/**/*.js'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+        'no-console': 'off',
+      },
+    },
+    {
+      files: ['packages/astro/src/core/errors/errors-data.ts'],
+      rules: {
+        // This file is used for docs generation, as such the code need to be in a certain format, we can somewhat ensure this with these rules
+        'object-shorthand': ['error', 'methods', { avoidExplicitReturnArrows: true }],
+        'arrow-body-style': ['error', 'never'],
+      },
+    },
   ],
 };

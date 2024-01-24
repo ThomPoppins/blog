@@ -14,6 +14,8 @@
 @import url("layout/navigation/nav.css");
 @import url("layout/navigation/links.css");
 @import url("layout/content/main.css");
+@import url("layout/footer/content.css");
+
 
 /* Styles for design and structure of media playes embedded from external services. */
 @import url("players/bandcamp.css");
