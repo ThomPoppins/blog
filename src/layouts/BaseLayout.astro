@@ -100,6 +100,7 @@ const { pageTitle, featuredUrl, image } = Astro.props;
       // Call the timer function to apply the animation styles to the element
 
       timer();
+      mainContentTimer();
 
       // Call the timer function every 300 seconds (300,000 milliseconds)
       setInterval(timer, 300000);

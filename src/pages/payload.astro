@@ -10,15 +10,12 @@ const pageTitle = "un-sheeple.me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>Astro + PayloadCMS 🚀</h1>
-  <h2>Blog posts list:</h2>
-  <ul>
-    {
-      posts.docs.map((post) => (
-        <li>
-          <a href={`posts/${post.slug}`} set:html={post.title} />
-        </li>
-      ))
-    }
-  </ul>
+  {
+    posts.docs.map((post) => (
+      <>
+        <h2 set:html={post.title} />
+        <p set:html={post.content2} />
+      </>
+    ))
+  }
 </BaseLayout>
