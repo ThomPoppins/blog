@@ -101,15 +101,6 @@ const { pageTitle, featuredUrl, image } = Astro.props;
             secondLayer.style.animation = `mainContentGradient ${randomSeconds}s ease-in-out infinite`;
             secondLayer.style.backgroundImage = `linear-gradient(45deg, #${randomSecondLayerColor1}, #${randomSecondLayerColor2}, #${randomSecondLayerColor3}, #${randomSecondLayerColor4}, #${randomSecondLayerColor5})`;
           }
-
-          // Add the event listener to the body to listen for the click event
-          document.body.addEventListener("click", () => {
-            // Remove the animation styles from the element
-            // element.style.animation = "";
-            // Call the timer function to apply the animation styles to the element
-            // timer();
-            mainContentTimer();
-          });
         }
 
         // Call the timer function to apply the animation styles to the element
@@ -126,6 +117,19 @@ const { pageTitle, featuredUrl, image } = Astro.props;
           // element.style.animation = "";
           //   // Call the timer function to apply the animation styles to the element
           timer();
+        });
+
+        // Add the event listener to the body to listen for the click event
+        document.body.addEventListener("click", () => {
+          // Remove the animation styles from the element
+          // element.style.animation = "";
+          // Call the timer function to apply the animation styles to the element
+          // timer();
+          mainContentTimer();
+        });
+
+        window.addEventListener("popstate", function (event) {
+          mainContentTimer();
         });
 
         // // Add the event listener to the body to listen for the touchmove event
