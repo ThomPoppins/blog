@@ -13,7 +13,20 @@ const username = "ThomDev";
 </style>
 
 <footer>
-  <Social platform="twitter" username="S1rTh0m45M0R3" />
+  <div class="copyright">
+    Copyright &copy; <span id="year"></span> | All rights reserved
+  </div>
 
-  <Social platform="youtube" username="@un-sheeple" />
+  <div class="social">
+    <Social platform={platform} username={username} />
+    <Social platform="twitter" username="S1rTh0m45M0R3" />
+
+    <Social platform="soundcloud" username="un-sheeple-me" />
+
+    <Social platform="youtube" username="@un-sheeple" />
+  </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear().toString();
+</script>
