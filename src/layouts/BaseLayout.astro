@@ -2,6 +2,15 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+
+let url = new URL(Astro.request.url);
+let isRoot = url.pathname === "/";
+
+if (isRoot) {
+  // Astro.pushState("/sheep");
+  console.log("isRoot");
+}
+
 const { pageTitle, featuredUrl, image } = Astro.props;
 ---
 
@@ -12,26 +21,29 @@ const { pageTitle, featuredUrl, image } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>un-sheeple.me | {pageTitle}</title>
+    <title>
+      {!isRoot ? `un-sheeple.me 🐑 | ${pageTitle}` : pageTitle}
+    </title>
   </head>
   <body>
-    <Header pageTitle={pageTitle} featuredUrl={featuredUrl} />
     <div class="main-content">
-      {
-        image ? (
-          <div class="featured-image">
-            <img src={image} alt={pageTitle} />
-          </div>
-        ) : null
-      }
-      <slot />
-      <Footer />
+      <div class="second-layer">
+        <Header pageTitle={pageTitle} featuredUrl={featuredUrl} />
+        {
+          image ? (
+            <div class="featured-image">
+              <img src={image} alt={pageTitle} />
+            </div>
+          ) : null
+        }
+        <slot />
+        <Footer />
+      </div>
     </div>
     <script>
       import "../scripts/menu.js";
 
       addEventListener("DOMContentLoaded", (event) => {
-
         // Select the body
         const element = document.querySelector("html") as HTMLElement;
 
