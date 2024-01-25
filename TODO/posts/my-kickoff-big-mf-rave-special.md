@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "KICKOFF! Big MF Rave Special! Oldschool Gabber Hardcore and current Techno Rave labels triggering a feeling of nostalgia and giving hope that rave hasn't died!"  
+title: "KICKOFF! Big MF Rave Special! Oldschool Gabber Hardcore and current Techno Rave labels triggering a feeling of nostalgia and giving hope that rave hasn't died!"
 pubDate: 2022-07-01
 description: "Kickoff blog post, giving examples what to expect to find."
 author: "ThomDev"
@@ -61,9 +61,9 @@ Gear up for a rhythmic journey as you surrender to the thumping beats of DJ Arju
 
 ## Ruffneck Records
 
-| Genres                      | Hardcore Techno, Artcore, Gabber, Oldschool, Hardcore   |
-|-----------------------------|---------------------------------------------------------|
-| **Founder(s) & Owner(s)**       | **Ruffneck** 🚀 ([**Soundcloud**](SOUNDCLOUD.COM/DJRUFFNECK), [**Bandcamp**](RUFFNECK.BANDCAMP.COM)) |
+| Genres                    | Hardcore Techno, Artcore, Gabber, Oldschool, Hardcore                                                |
+| ------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Founder(s) & Owner(s)** | **Ruffneck** 🚀 ([**Soundcloud**](SOUNDCLOUD.COM/DJRUFFNECK), [**Bandcamp**](RUFFNECK.BANDCAMP.COM)) |
 
 ### Ruffneck - (Hellbound Goodbye 2020 Livestream)
 
@@ -96,14 +96,14 @@ For me personally, the most remarkable aspect is that even after more than 17 ye
 **Format:** 12" Vinyl  
 **Genre:** Electronic  
 **Style:** #Techno  
-**Release date:** February 25, 2022  
+**Release date:** February 25, 2022
 
 **Tracklist:**
 
-- A1. Ruffneck Prime – Savathûn’s Witness  
-- A2. Ruffneck Prime – Puritan  
-- B1. Ruffneck Prime – Knights In White Acid  
-- B2. Ruffneck Prime – Pathway To Gehenna  
+- A1. Ruffneck Prime – Savathûn’s Witness
+- A2. Ruffneck Prime – Puritan
+- B1. Ruffneck Prime – Knights In White Acid
+- B2. Ruffneck Prime – Pathway To Gehenna
 
 **Follow #Absolete here:**
 
@@ -156,15 +156,18 @@ _At our label, we are committed to promoting the latest and greatest electronic 
 
 #### A | Bio-Forge - We Know Your Fear
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593210&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-we-know-your-fear" title="Bio-Forge - We Know Your Fear" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - We Know Your Fear</a></div>
+<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593210&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-we-know-your-fear" title="Bio-Forge - We Know Your Fear" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - We Know Your Fear</a></div>
 
 #### B1 | Bio-Forge - Turbulence
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115747921&color=%238b8b3d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-turbulence-1996" title="Bio-Forge (Predator) - Turbulence (1996)" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge (Predator) - Turbulence (1996)</a></div>
+<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115747921&color=%238b8b3d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-turbulence-1996" title="Bio-Forge (Predator) - Turbulence (1996)" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge (Predator) - Turbulence (1996)</a></div>
 
 #### B2 | Bio-Forge - No 1 S-capes Us
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593207&color=%23ffffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-no-1-s-capes-us" title="Bio-Forge - No-1 S-capes Us" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - No-1 S-capes Us</a></div>
+<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593207&color=%23ffffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-no-1-s-capes-us" title="Bio-Forge - No-1 S-capes Us" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - No-1 S-capes Us</a></div>
 
 ## **Bio-Forge (Predator & Leviathan): The Evolution of Hardcore Pioneers**
 
@@ -178,7 +181,7 @@ Predator, a stalwart in the hardcore scene, boasts a profound dedication to the 
 
 As the years progressed, the duo found themselves back in harmony, performing together once again, signaling a revival of the Bio-Forge legacy. Their enduring impact on the hardcore scene and commitment to pushing musical boundaries make Bio-Forge, with Predator and Leviathan at its core, a beacon in the ever-evolving world of hardcore music.
 
-*External Links:*
+_External Links:_
 
 - [Cenobite Records Website](https://cenobiterecords.com)
 - [Predator (+Bio-Forge) on Soundcloud](https://soundcloud.com/djpredator)
@@ -196,11 +199,12 @@ Here's a typical live set you can expect at Hellraiser. DJs Predator vs. Leviath
 
 ## Liveset Predator vs. Leviathan from Cenobite Records
 
-***This was the kind of rave that night the whole night kept going on and on and never winded down, 100% energy rave core spacing music and that was and is only way it should be in my opinion, party hard party please!***
+**_This was the kind of rave that night the whole night kept going on and on and never winded down, 100% energy rave core spacing music and that was and is only way it should be in my opinion, party hard party please!_**
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/845224399&color=%237a99a6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cyndium-1" title="Cyndium" target="_blank" style="color: #cccccc; text-decoration: none;">Cyndium</a> · <a href="https://soundcloud.com/cyndium-1/predator-vs-leviathan-pandemonium-the-endbeginning" title="Predator vs. Leviathan - Pandemonium The End/Beginning" target="_blank" style="color: #cccccc; text-decoration: none;">Predator vs. Leviathan - Pandemonium The End/Beginning</a></div>
+<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/845224399&color=%237a99a6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cyndium-1" title="Cyndium" target="_blank" style="color: #cccccc; text-decoration: none;">Cyndium</a> · <a href="https://soundcloud.com/cyndium-1/predator-vs-leviathan-pandemonium-the-endbeginning" title="Predator vs. Leviathan - Pandemonium The End/Beginning" target="_blank" style="color: #cccccc; text-decoration: none;">Predator vs. Leviathan - Pandemonium The End/Beginning</a></div>
 
-***There are quite a few other Cenobite artists' live sets on the internet to listen to for FREE.***
+**_There are quite a few other Cenobite artists' live sets on the internet to listen to for FREE._**
 
 ## Authenticity Amidst Evolution: Old-School Hardcore Gabber's Enduring Legacy
 
@@ -240,13 +244,13 @@ Recently, I discovered a niche in techno where artists and labels are dedicated 
   <iframe class="youtube-video"  src="https://www.youtube.com/embed/videoseries?si=ySXmCei48gbormWF&amp;list=OLAK5uy_nwwpi3rTI2f_Is3NLYJnoE3LkZem0tRnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-| Label                         | Cenobite Records         |
-|-------------------------------|--------------------------|
-| Released                      | 23 Feb 1996              |
-| Format                        | Vinyl, 12", 45 RPM       |
-| Country                       | Netherlands              |
-| Genre                         | Electronic               |
-| Style                         | Hardcore, Gabber         |
+| Label    | Cenobite Records   |
+| -------- | ------------------ |
+| Released | 23 Feb 1996        |
+| Format   | Vinyl, 12", 45 RPM |
+| Country  | Netherlands        |
+| Genre    | Electronic         |
+| Style    | Hardcore, Gabber   |
 
 These tracks showcase an early form of hardcore music, crafted by the producer/DJ Leviathan during his debut on Cenobite Records. Take a moment to distinguish it from the more popular mainstream hardcore, represented in the linked video. I won't pass judgment if mainstream is your preference, but it's worth acknowledging the distinct approach of old-school Cenobite production.
 
@@ -262,15 +266,16 @@ In the old-school era, raves attracted people for more than just the music; they
 
 ## ERROR 303 Records
 
-| Genres                      | Acid, Techno, Hardtechno, Rave                            |
-|-----------------------------|---------------------------------------------------------|
-| **Founder(s) & Owner(s)**       | **TEOKAD 303** 🚀 ([**Soundcloud**](https://soundcloud.com/teokad)) |
+| Genres                    | Acid, Techno, Hardtechno, Rave                                      |
+| ------------------------- | ------------------------------------------------------------------- |
+| **Founder(s) & Owner(s)** | **TEOKAD 303** 🚀 ([**Soundcloud**](https://soundcloud.com/teokad)) |
 
 ### VA - SUMMER OF RAVE
 
 Note: If you are a collector, all tracks on this album are free to download, I provided the links below the album.
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1668794183&color=%23ff0ccc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/error303-records" title="ERROR 303 Records" target="_blank" style="color: #cccccc; text-decoration: none;">ERROR 303 Records</a> · <a href="https://soundcloud.com/error303-records/sets/summer-of-rave" title="SUMMER OF RAVE" target="_blank" style="color: #cccccc; text-decoration: none;">SUMMER OF RAVE</a></div>
+<iframe width="100%" height="450" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1668794183&color=%23ff0ccc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/error303-records" title="ERROR 303 Records" target="_blank" style="color: #cccccc; text-decoration: none;">ERROR 303 Records</a> · <a href="https://soundcloud.com/error303-records/sets/summer-of-rave" title="SUMMER OF RAVE" target="_blank" style="color: #cccccc; text-decoration: none;">SUMMER OF RAVE</a></div>
 
 - [ ] Add table with release data
 

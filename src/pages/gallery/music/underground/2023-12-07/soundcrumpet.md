@@ -28,8 +28,6 @@ Enter the realm of amen breaks and pure euphoria with Bio-Kem's "SC005." Before 
 
 <iframe style="border: 0; width: 600px; height: 805px; display: block;" src="https://bandcamp.com/EmbeddedPlayer/album=3503794123/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://soundcrumpet-uk.bandcamp.com/album/sc005">SC005 by Bio-Kem</a></iframe>
 
-
-
 # Amino - Time EP
 
 **Album Description:**
@@ -51,14 +49,15 @@ The EP is available for streaming and download on Bandcamp, offering high-qualit
 Amino's debut EP marks a promising start to his musical journey, leaving fans eager for more. As the artist continues to evolve and explore new musical territories, "Time" stands as a testament to Amino's talent and potential in the electronic music scene.
 
 **Album Credits:**
+
 - Amino: [Soundcloud](https://soundcloud.com/amino-music)
 - Vulpes: [Soundcloud](https://soundcloud.com/vulp3s)
 - Mastered by Anorak: [Soundcloud](https://soundcloud.com/anorak)
 - Artwork by Edmondo Guarini
 
-*All rights reserved. © 2020*
+_All rights reserved. © 2020_
 
 ## Artists livesets
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734768897&color=%236700ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/thom-poppins" title="Thom Poppins" target="_blank" style="color: #cccccc; text-decoration: none;">Thom Poppins</a> · <a href="https://soundcloud.com/thom-poppins/sets/bio-kem-live" title="bio-kem live" target="_blank" style="color: #cccccc; text-decoration: none;">bio-kem live</a></div>
-
+<iframe width="100%" height="450" scrolling="no" style="border: none; overflow: auto;"
+ allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734768897&color=%236700ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/thom-poppins" title="Thom Poppins" target="_blank" style="color: #cccccc; text-decoration: none;">Thom Poppins</a> · <a href="https://soundcloud.com/thom-poppins/sets/bio-kem-live" title="bio-kem live" target="_blank" style="color: #cccccc; text-decoration: none;">bio-kem live</a></div>

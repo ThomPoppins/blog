@@ -18,7 +18,7 @@ tags:
     "Rave",
     "Techno Rave",
     "Experimental",
-    "Breakcore"
+    "Breakcore",
   ]
 ---
 
@@ -36,10 +36,13 @@ _Dutch Underground label & distributor. Techno / Acid Core / Acid House / Acid E
     width="100%"
     height="300"
     scrolling="no"
-    frameborder="no"
+    style="border: none; overflow: auto;"
+
     allow="autoplay"
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1738780644&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-  ></iframe>
+
+> </iframe>
+
 </div>
 
 <div class="bandcamp-player-container">
