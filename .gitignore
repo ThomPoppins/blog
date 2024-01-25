@@ -31,6 +31,7 @@ public
 
 # Images not to be ignored
 !public/favicon.ico
+!public/images/blog/LOGO/LOGO.png
 !public/images/blog/layout/GIF/colorbar.gif
 !public/images/blog/layout/GIF/glasslike-visual.gif
 !public/images/blog/layout/GIF/SLOWEREARLYDISCOSHIT.gif
