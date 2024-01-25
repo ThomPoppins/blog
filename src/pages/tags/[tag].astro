@@ -11,12 +11,14 @@ const filteredPosts = allPosts.filter((post) =>
 ---
 
 <BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
-  <div class="tags">
-    {
-      filteredPosts.map((post) => (
-        <BlogPostLink url={post.url} title={post.frontmatter.title} />
-      ))
-    }
+  <div class="second-layer">
+    <p>Posts tagged with {tag}</p>
+    <div class="tags">
+      {
+        filteredPosts.map((post) => (
+          <BlogPostLink url={post.url} title={post.frontmatter.title} />
+        ))
+      }
+    </div>
   </div>
 </BaseLayout>

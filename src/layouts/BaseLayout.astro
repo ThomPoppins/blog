@@ -28,7 +28,10 @@ const { pageTitle, featuredUrl, image } = Astro.props;
   <body>
     <div class="main-content">
       <div class="second-layer">
-        <Header pageTitle={pageTitle} featuredUrl={featuredUrl} />
+        <div class="main-content">
+          <Header pageTitle={pageTitle} featuredUrl={featuredUrl} />
+        </div>
+
         {
           image ? (
             <div class="featured-image">

@@ -2,6 +2,7 @@
   border-radius: 30px;
   user-select: none;
   width: 700px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
@@ -15,6 +16,7 @@
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   background: linear-gradient(-45deg, #923eff, #6f00ff, #6600ec, #6f00ff);
   background-size: 800% 800%;
   padding: 30px;
