@@ -1,18 +1,28 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-import vercel from '@astrojs/vercel/serverless';
+import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
-
 import sentry from "@sentry/astro";
 import spotlightjs from "@spotlightjs/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: vercel({
     webAnalytics: {
-      enabled: true
-    }
+      enabled: true,
+    },
   }),
-  integrations: [mdx(), react(), sentry(), spotlightjs()]
+  integrations: [
+    mdx(),
+    react(),
+    sentry({
+      dsn: "https://63fa277e17f202ed07d687a3747ce513@o4506631183597568.ingest.sentry.io/4506631292715008",
+      sourceMapsUploadOptions: {
+        project: "un-sheeple-me",
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+      },
+    }),
+    spotlightjs(),
+  ],
 });
