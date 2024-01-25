@@ -1,7 +1,7 @@
 {
   "name": "un-sheeple.me",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "GPL-2.0+",
   "scripts": {
     "dev": "astro dev",

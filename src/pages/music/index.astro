@@ -16,29 +16,32 @@ const pageTitle = "MUSIC";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Music</h2>
+  <div class="second-layer">
+    <h3>New? Start with this one:</h3>
 
-  <h3>New? Start with this one:</h3>
+    <iframe
+      style="border: 0; width: 700px; height: 472px;"
+      src="https://bandcamp.com/EmbeddedPlayer/album=438195332/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+      seamless
+      ><a
+      href="https://prspctrecordings.bandcamp.com/album/prspct-worst-of-2023">PRSPCT
+      Worst Of 2023 by Various Artists</a></iframe
+    >
+  </div>
 
-  <iframe
-    style="border: 0; width: 700px; height: 472px;"
-    src="https://bandcamp.com/EmbeddedPlayer/album=438195332/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
-    seamless
-    ><a
-    href="https://prspctrecordings.bandcamp.com/album/prspct-worst-of-2023">PRSPCT
-    Worst Of 2023 by Various Artists</a></iframe
-  >
-
-  <div class="tags">
-    {
-      tags
-        .sort((a, b) => a.localeCompare(b))
-        .map((tag) => (
-          <p class="tag">
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </p>
-        ))
-    }
+  <div class="main-content">
+    <h2>Find music here:</h2>
+    <div class="tags">
+      {
+        tags
+          .sort((a, b) => a.localeCompare(b))
+          .map((tag) => (
+            <p class="tag">
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </p>
+          ))
+      }
+    </div>
   </div>
 
   {
