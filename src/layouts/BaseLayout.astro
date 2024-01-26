@@ -1,15 +1,11 @@
 ---
+// import the Image component and the image
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 let url = new URL(Astro.request.url);
 let isRoot = url.pathname === "/";
-
-if (isRoot) {
-  // Astro.pushState("/sheep");
-  console.log("isRoot");
-}
 
 const { pageTitle, featuredUrl, image } = Astro.props;
 ---
@@ -22,7 +18,7 @@ const { pageTitle, featuredUrl, image } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>
-      {!isRoot ? `un-sheeple.me 🐑 | ${pageTitle}` : pageTitle}
+      {!isRoot ? `un-sheeple.me 🐑 | ${pageTitle}` : ""}
     </title>
   </head>
   <body>
@@ -44,9 +40,8 @@ const { pageTitle, featuredUrl, image } = Astro.props;
         <Footer />
       </div>
     </div>
-    <script>
-      import "../scripts/menu.js";
 
+    <script>
       addEventListener("DOMContentLoaded", (event) => {
         // Select the body
         const element = document.querySelector("html") as HTMLElement;
