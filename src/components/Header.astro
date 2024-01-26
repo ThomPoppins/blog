@@ -1,4 +1,5 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
 
@@ -23,3 +24,4 @@ let { pageTitle, featuredUrl, image } = Astro.props;
     )
   }
 </header>
+<SpeedInsights />
