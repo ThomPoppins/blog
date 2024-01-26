@@ -74,7 +74,6 @@
 	background-color: var(--background-secondary);
 	border-radius: var(--radius-s);
 	max-height: 300px;
-	user-select: text;
 }
 
 .importer-log .list-item {
