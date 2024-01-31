@@ -156,17 +156,17 @@ _At our label, we are committed to promoting the latest and greatest electronic 
 
 #### A | Bio-Forge - We Know Your Fear
 
-<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+<iframe width="100%" height="166"  style="border: none; overflow: auto;"
  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593210&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-we-know-your-fear" title="Bio-Forge - We Know Your Fear" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - We Know Your Fear</a></div>
 
 #### B1 | Bio-Forge - Turbulence
 
-<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+<iframe width="100%" height="166"  style="border: none; overflow: auto;"
  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115747921&color=%238b8b3d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-turbulence-1996" title="Bio-Forge (Predator) - Turbulence (1996)" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge (Predator) - Turbulence (1996)</a></div>
 
 #### B2 | Bio-Forge - No 1 S-capes Us
 
-<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+<iframe width="100%" height="166"  style="border: none; overflow: auto;"
  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150593207&color=%23ffffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpredator" title="DJ PREDATOR #djpredator" target="_blank" style="color: #cccccc; text-decoration: none;">DJ PREDATOR #djpredator</a> · <a href="https://soundcloud.com/djpredator/bio-forge-no-1-s-capes-us" title="Bio-Forge - No-1 S-capes Us" target="_blank" style="color: #cccccc; text-decoration: none;">Bio-Forge - No-1 S-capes Us</a></div>
 
 ## **Bio-Forge (Predator & Leviathan): The Evolution of Hardcore Pioneers**
@@ -201,7 +201,7 @@ Here's a typical live set you can expect at Hellraiser. DJs Predator vs. Leviath
 
 **_This was the kind of rave that night the whole night kept going on and on and never winded down, 100% energy rave core spacing music and that was and is only way it should be in my opinion, party hard party please!_**
 
-<iframe width="100%" height="166" scrolling="no" style="border: none; overflow: auto;"
+<iframe width="100%" height="166"  style="border: none; overflow: auto;"
  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/845224399&color=%237a99a6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cyndium-1" title="Cyndium" target="_blank" style="color: #cccccc; text-decoration: none;">Cyndium</a> · <a href="https://soundcloud.com/cyndium-1/predator-vs-leviathan-pandemonium-the-endbeginning" title="Predator vs. Leviathan - Pandemonium The End/Beginning" target="_blank" style="color: #cccccc; text-decoration: none;">Predator vs. Leviathan - Pandemonium The End/Beginning</a></div>
 
 **_There are quite a few other Cenobite artists' live sets on the internet to listen to for FREE._**
@@ -274,7 +274,7 @@ In the old-school era, raves attracted people for more than just the music; they
 
 Note: If you are a collector, all tracks on this album are free to download, I provided the links below the album.
 
-<iframe width="100%" height="450" scrolling="no" style="border: none; overflow: auto;"
+<iframe width="100%" height="450"  style="border: none; overflow: auto;"
  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1668794183&color=%23ff0ccc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/error303-records" title="ERROR 303 Records" target="_blank" style="color: #cccccc; text-decoration: none;">ERROR 303 Records</a> · <a href="https://soundcloud.com/error303-records/sets/summer-of-rave" title="SUMMER OF RAVE" target="_blank" style="color: #cccccc; text-decoration: none;">SUMMER OF RAVE</a></div>
 
 - [ ] Add table with release data

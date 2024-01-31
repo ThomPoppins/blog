@@ -35,7 +35,7 @@ _Dutch Underground label & distributor. Techno / Acid Core / Acid House / Acid E
     class="soundcloud-player"
     width="100%"
     height="300"
-    scrolling="no"
+    
     style="border: none; overflow: auto;"
 
     allow="autoplay"
